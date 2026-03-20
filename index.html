@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator - Estimate Monthly Payments | LoanWise</title>
+  <meta name="description" content="Calculate your monthly loan payment in seconds. Free online loan calculator supporting USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED. No signup required. Get instant estimates for principal, interest, and total cost.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.loanwise.site/">
+  <meta property="og:title" content="Loan Calculator - Estimate Monthly Payments | LoanWise">
+  <meta property="og:description" content="Calculate your monthly loan payment in seconds. Free online loan calculator supporting USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED. No signup required.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-icon" aria-hidden="true">L</span>
+        <span class="logo-text">LoanWise</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <header class="page-header">
+      <h1>LoanWise</h1>
+      <p class="subtitle">Simple Loan Calculator</p>
+      <p class="help-text">Estimate your monthly loan payment in seconds.</p>
+    </header>
+
+    <main class="calculator">
+      <div class="input-group">
+        <label for="currency">Currency</label>
+        <select id="currency" aria-label="Select currency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="MAD">MAD - Moroccan Dirham</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AED">AED - UAE Dirham</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="loanAmount">Loan Amount</label>
+        <input
+          type="number"
+          id="loanAmount"
+          placeholder="e.g. 25000"
+          min="1"
+          step="100"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="interestRate">Interest Rate (%)</label>
+        <input
+          type="number"
+          id="interestRate"
+          placeholder="e.g. 5.5"
+          min="0"
+          max="100"
+          step="0.1"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="loanTerm">Loan Term (months)</label>
+        <input
+          type="number"
+          id="loanTerm"
+          placeholder="e.g. 36"
+          min="1"
+          max="600"
+          step="1"
+        >
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+
+      <div class="results" id="results">
+        <div class="result-card">
+          <p class="result-label">Monthly Payment</p>
+          <p class="result-value" id="monthlyPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Payment</p>
+          <p class="result-value" id="totalPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Interest</p>
+          <p class="result-value" id="totalInterest">—</p>
+        </div>
+      </div>
+    </main>
+
+    <p class="disclaimer">This calculator provides an estimate for informational purposes only.</p>
+
+    <section class="content-section" id="how-to-calculate">
+      <h2>How to Calculate Your Monthly Loan Payment</h2>
+      <p>Your monthly loan payment depends on three main factors: the amount you borrow, the interest rate charged by the lender, and the length of time you have to repay the loan. A higher loan amount or interest rate will increase your monthly payment, while a longer loan term typically lowers it by spreading the cost over more months.</p>
+
+      <h3>Understanding Your Results</h3>
+      <dl class="result-definitions">
+        <dt>Monthly Payment</dt>
+        <dd>The fixed amount you pay each month until the loan is fully repaid. This stays the same throughout the loan term.</dd>
+        <dt>Total Payment</dt>
+        <dd>The full amount you will pay over the entire life of the loan, including both the principal and all interest.</dd>
+        <dt>Total Interest</dt>
+        <dd>The extra cost of borrowing. This is the difference between your total payment and the original loan amount.</dd>
+      </dl>
+
+      <h3>Why Use LoanWise?</h3>
+      <p>LoanWise is fast, simple, and designed for everyday use. Get instant estimates without signing up or downloading anything. The calculator works smoothly on your phone or desktop and supports multiple currencies—USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED—so you can plan in the currency that matters to you.</p>
+
+      <h3>Frequently Asked Questions</h3>
+      <dl class="faq-list">
+        <dt>What affects my monthly loan payment?</dt>
+        <dd>Three factors drive your monthly payment: the loan amount (how much you borrow), the annual interest rate (the cost of borrowing), and the loan term (how many months you have to repay). Changing any of these will change your monthly payment.</dd>
+        <dt>Does this calculator include extra bank fees?</dt>
+        <dd>No. This calculator estimates principal and interest only. Your actual payment may be higher if your lender charges origination fees, insurance, or other costs. Always check with your lender for the exact amount.</dd>
+        <dt>Can I use this calculator for a 0% interest loan?</dt>
+        <dd>Yes. Enter 0 for the interest rate to see your monthly payment when there is no interest. Your monthly payment will simply be the loan amount divided by the number of months.</dd>
+      </dl>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
