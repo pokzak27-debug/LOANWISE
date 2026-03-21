@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============ Calculator ============
-const CURRENCIES = ['USD', 'EUR', 'GBP', 'MAD', 'CAD', 'CHF', 'JPY', 'AED'];
+const CURRENCIES = ['USD', 'EUR', 'GBP', 'MAD', 'CAD', 'AUD', 'CHF', 'JPY', 'AED'];
 
 function initCalculator() {
   const currencySelect = document.getElementById('currency');

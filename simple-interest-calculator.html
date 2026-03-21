@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator – I=P×R×T Free</title>
+  <meta name="description" content="Calculate simple interest with I=P×R×T. Free, instant. Compare to compound. No signup—try now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://loanwisecalc.com/simple-interest-calculator.html">
+  <meta property="og:title" content="Simple Interest Calculator – I=P×R×T Free">
+  <meta property="og:description" content="Calculate simple interest with I=P×R×T. Free, instant. Compare to compound. No signup—try now.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is simple interest better when I borrow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often you pay less total interest with simple interest than with compounding on the same principal, rate, and years\u2014because nothing stacks on old interest. What matters is what your promissory note actually says."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the compound total higher here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Annual compounding reinvests each year\u2019s interest. Simple interest leaves the interest separate and does not grow the base for next year\u2019s calculation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use months instead of years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Express time as a fraction of a year (9 months = 0.75) or use I = P \u00d7 R \u00d7 (months \u00f7 12)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the rate changes mid-way?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This tool assumes one constant rate for the whole period. Changing rates need separate steps or a different model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this replace my loan statement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is for learning and quick estimates. Lenders round and may use different conventions."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-tool-calculator">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">LoanWise</span>
+        </a>
+        <div class="site-nav-scroll">
+        <a href="index.html">Home</a>
+        <a href="car-loan-calculator.html">Car Loan</a>
+        <a href="auto-loan-calculator.html">Auto Loan</a>
+        <a href="personal-loan-calculator.html">Personal Loan</a>
+        <a href="business-loan-calculator.html">Business Loan</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a href="simple-interest-calculator.html">Simple Interest</a>
+        <a href="loan-calculator-usa.html">USA</a>
+        <a href="loan-calculator-uk.html">UK</a>
+        <a href="loan-calculator-canada.html">Canada</a>
+        <a href="loan-calculator-uae.html">UAE</a>
+        <a href="loan-calculator-morocco.html">Morocco</a>
+        <a href="loan-calculator-australia.html">Australia</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="terms.html">Terms</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Simple Interest Calculator</span>
+    </nav>
+    <header class="page-header page-header--compact">
+      <h1>Simple Interest Calculator — Free, Fast &amp; Easy Online</h1>
+      <p class="subtitle subtitle--benefit">I = P×R×T in one click—optional compound comparison</p>
+      <p class="intro-lead">Solve simple interest in seconds. Free online calculator—no signup. Start calculating now.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="ad-slot ad-top" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <main class="calculator">
+      <div class="input-group">
+        <label for="siCurrency">Currency</label>
+        <select id="siCurrency" aria-label="Select currency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="MAD">MAD - Moroccan Dirham</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AED">AED - UAE Dirham</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="siPrincipal">Principal (P)</label>
+        <input type="number" id="siPrincipal" placeholder="e.g. 10000" min="0" step="100">
+      </div>
+
+      <div class="input-group">
+        <label for="siRate">Annual interest rate (%)</label>
+        <input type="number" id="siRate" placeholder="e.g. 5" min="0" max="100" step="0.1">
+      </div>
+
+      <div class="input-group">
+        <label for="siTime">Time (years)</label>
+        <input type="number" id="siTime" placeholder="e.g. 3" min="0" max="100" step="0.1">
+      </div>
+
+      <button type="button" id="siCalculateBtn">Calculate simple interest now</button>
+
+      <p class="help-text" style="margin-top: 1rem; font-size: 0.8125rem;">Compound row uses <strong>annual compounding</strong>: A = P(1 + R)<sup>T</sup>.</p>
+
+      <div class="results" id="siResults">
+        <div class="result-card">
+          <p class="result-label">Simple interest (I)</p>
+          <p class="result-value" id="siInterestOut">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Simple: total (P + I)</p>
+          <p class="result-value" id="siSimpleTotalOut">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Compound: total (annual)</p>
+          <p class="result-value" id="siCompoundTotalOut">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Compound interest earned</p>
+          <p class="result-value" id="siCompoundInterestOut">—</p>
+        </div>
+      </div>
+    </main>
+
+    <p class="help-text help-text--below">Installments: <a href="interest-calculator.html">interest calculator</a> · <a href="index.html">loan</a> · <a href="car-loan-calculator.html">car</a> · <a href="mortgage-calculator.html">mortgage</a></p>
+
+    <p class="disclaimer">Education &amp; planning only. <a href="index.html">Home</a> · <a href="personal-loan-calculator.html">Personal</a> · <a href="business-loan-calculator.html">Business</a></p>
+                                                       <section class="related-calculators" aria-labelledby="related-calculators-heading">
+      <h2 id="related-calculators-heading">Related Calculators</h2>
+      <ul class="related-calculators-list">
+        <li><a href="index.html">Loan Calculator</a></li>
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+      </ul>
+    </section>
+<section class="content-section">
+      <h2>What simple interest means</h2>
+      <p><strong>Simple interest</strong> is calculated only on the original principal. It never earns “interest on interest.” The classic formula is:</p>
+      <p><strong>I = P × R × T</strong></p>
+      <p><em>P</em> is principal, <em>R</em> is the annual rate written as a decimal (5% → 0.05), and <em>T</em> is time in years. The balance after <em>T</em> years is <strong>P + I</strong> if nothing is repaid along the way.</p>
+
+      <h2>How compound differs on this page</h2>
+      <p>We show <strong>annual compounding</strong>: <strong>A = P(1 + R)<sup>T</sup></strong>. Interest stays in the pot, so the ending balance beats simple interest at the same nominal rate.</p>
+      <p>Bank loans are often <em>amortized</em>—a third pattern. For monthly payments use <a href="interest-calculator.html">interest</a> or <a href="index.html">loan</a>; unsecured: <a href="personal-loan-calculator.html">personal</a>; housing: <a href="mortgage-calculator.html">mortgage</a>.</p>
+
+      <h2>When simple interest shows up in real life</h2>
+      <p>You might see simple interest in textbooks, some short-term notes, or simplified examples. Savings products often quote <abbr title="annual percentage yield">APY</abbr>, which already reflects compounding. Your contract—not the name of the product—tells you which math applies.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq-list">
+        <dt>Is simple interest better when I borrow?</dt>
+        <dd>Often you pay less total interest with simple interest than with compounding on the same principal, rate, and years—because nothing stacks on old interest. What matters is what your promissory note actually says.</dd>
+        <dt>Why is the compound total higher here?</dt>
+        <dd>Annual compounding reinvests each year’s interest. Simple interest leaves the interest separate and does not grow the base for next year’s calculation.</dd>
+        <dt>Can I use months instead of years?</dt>
+        <dd>Yes. Express time as a fraction of a year (9 months = 0.75) or use I = P × R × (months ÷ 12).</dd>
+        <dt>What if the rate changes mid-way?</dt>
+        <dd>This tool assumes one constant rate for the whole period. Changing rates need separate steps or a different model.</dd>
+        <dt>Does this replace my loan statement?</dt>
+        <dd>No. It is for learning and quick estimates. Lenders round and may use different conventions.</dd>
+      </dl>
+    </section>
+
+    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+  </div>
+
+      <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-map" aria-label="Footer links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Loan Calculator</a></li>
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+            <li><a href="interest-calculator.html">Interest Calculator</a></li>
+            <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+            <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Car Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+            <li><a href="auto-loan-refinance-calculator.html">Auto Loan Refinance</a></li>
+            <li><a href="car-loan-20000-monthly-payment.html">Car Loan for $20,000</a></li>
+            <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+            <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
+            <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
+            <li><a href="auto-loan-calculator-60-months.html">60 Month Auto Loan</a></li>
+            <li><a href="how-much-car-loan-can-i-afford.html">How Much Can I Afford</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Personal Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="bad-credit-loan-calculator.html">Bad Credit Loan</a></li>
+            <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+            <li><a href="personal-loan-20000-payment.html">Personal Loan for $20,000</a></li>
+            <li><a href="debt-consolidation-loan-calculator.html">Debt Consolidation</a></li>
+            <li><a href="home-improvement-loan-calculator.html">Home Improvement Loan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Mortgage Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+            <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+            <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+            <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Country Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="loan-calculator-usa.html">USA</a></li>
+            <li><a href="loan-calculator-uk.html">UK</a></li>
+            <li><a href="loan-calculator-canada.html">Canada</a></li>
+            <li><a href="loan-calculator-australia.html">Australia</a></li>
+            <li><a href="loan-calculator-uae.html">UAE</a></li>
+            <li><a href="loan-calculator-morocco.html">Morocco</a></li>
+            <li><a href="loan-calculator-india.html">India</a></li>
+            <li><a href="loan-calculator-singapore.html">Singapore</a></li>
+            <li><a href="loan-calculator-new-zealand.html">New Zealand</a></li>
+            <li><a href="loan-calculator-ireland.html">Ireland</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const currencyEl = document.getElementById('siCurrency');
+      const principalEl = document.getElementById('siPrincipal');
+      const rateEl = document.getElementById('siRate');
+      const timeEl = document.getElementById('siTime');
+      const btn = document.getElementById('siCalculateBtn');
+      const interestOut = document.getElementById('siInterestOut');
+      const simpleTotalOut = document.getElementById('siSimpleTotalOut');
+      const compoundTotalOut = document.getElementById('siCompoundTotalOut');
+      const compoundInterestOut = document.getElementById('siCompoundInterestOut');
+
+      const CURRENCIES = ['USD', 'EUR', 'GBP', 'MAD', 'CAD', 'AUD', 'CHF', 'JPY', 'AED'];
+      function formatCurrency(amount, currency) {
+        const c = CURRENCIES.includes(currency) ? currency : 'USD';
+        const opt = { style: 'currency', currency: c, minimumFractionDigits: 2, maximumFractionDigits: 2 };
+        if (c === 'JPY') { opt.minimumFractionDigits = 0; opt.maximumFractionDigits = 0; }
+        return new Intl.NumberFormat('en-US', opt).format(amount);
+      }
+
+      function clearOutputs() {
+        [interestOut, simpleTotalOut, compoundTotalOut, compoundInterestOut].forEach(el => {
+          if (el) { el.textContent = '—'; el.classList.remove('has-value'); }
+        });
+      }
+
+      function run() {
+        const p = parseFloat(principalEl?.value);
+        const rPct = parseFloat(rateEl?.value);
+        const t = parseFloat(timeEl?.value);
+        const currency = currencyEl?.value || 'USD';
+
+        if (isNaN(p) || p < 0 || isNaN(t) || t < 0) {
+          clearOutputs();
+          return;
+        }
+
+        const r = (isNaN(rPct) || rPct < 0 ? 0 : rPct) / 100;
+
+        const simpleInterest = p * r * t;
+        const simpleTotal = p + simpleInterest;
+
+        const compoundTotal = p * Math.pow(1 + r, t);
+        const compoundInterest = compoundTotal - p;
+
+        const outs = [
+          [interestOut, simpleInterest],
+          [simpleTotalOut, simpleTotal],
+          [compoundTotalOut, compoundTotal],
+          [compoundInterestOut, compoundInterest]
+        ];
+        outs.forEach(([el, val]) => {
+          if (el) {
+            el.textContent = formatCurrency(val, currency);
+            el.classList.add('has-value');
+          }
+        });
+      }
+
+      btn?.addEventListener('click', run);
+      [principalEl, rateEl, timeEl, currencyEl].forEach(el => {
+        el?.addEventListener('keydown', e => {
+          if (e.key === 'Enter') { e.preventDefault(); run(); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -3,39 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loan Calculator - Estimate Monthly Payments | LoanWise</title>
-  <meta name="description" content="Calculate your monthly loan payment in seconds. Free online loan calculator supporting USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED. No signup required. Get instant estimates for principal, interest, and total cost.">
+  <title>Loan Calculator – Monthly Payment Free &amp; Instant</title>
+  <meta name="description" content="Calculate monthly payment, total interest, and loan cost in seconds. Free, easy calculator. No signup—try now.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.loanwise.site/">
-  <meta property="og:title" content="Loan Calculator - Estimate Monthly Payments | LoanWise">
-  <meta property="og:description" content="Calculate your monthly loan payment in seconds. Free online loan calculator supporting USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED. No signup required.">
+  <link rel="canonical" href="https://loanwisecalc.com/">
+  <meta property="og:title" content="Loan Calculator – Monthly Payment, Interest &amp; Total Cost (2026)">
+  <meta property="og:description" content="Calculate your monthly loan payment, total interest, and full cost in seconds. Free &amp; instant—9 currencies, no signup. Try now.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LoanWise">
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What affects my monthly loan payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Principal, annual rate, and term in months. Change any one and the payment changes. Small rate moves matter more on large balances and long terms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this include bank fees or insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We model principal and interest only. If your lender bundles fees into the loan, add them to the amount you enter; otherwise budget fees separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use 0% interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enter 0 for the rate. The payment is approximately the loan amount divided by the number of months, before any real-world fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the result a guarantee from a lender?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is a mathematical estimate. Your bank may round differently or apply promotions you have not entered here."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a credit card minimum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cards revolve and minimums can stretch repayment for years. This tool assumes a fixed payoff date like a typical term loan."
+      }
+    }
+  ]
+}
+  </script>
 </head>
-<body>
+<body class="page-home-ctr">
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="index.html" class="site-logo">
-        <span class="logo-icon" aria-hidden="true">L</span>
-        <span class="logo-text">LoanWise</span>
-      </a>
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">LoanWise</span>
+        </a>
+        <div class="site-nav-scroll">
         <a href="index.html">Home</a>
+        <a href="car-loan-calculator.html">Car Loan</a>
+        <a href="auto-loan-calculator.html">Auto Loan</a>
+        <a href="personal-loan-calculator.html">Personal Loan</a>
+        <a href="business-loan-calculator.html">Business Loan</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a href="simple-interest-calculator.html">Simple Interest</a>
+        <a href="loan-calculator-usa.html">USA</a>
+        <a href="loan-calculator-uk.html">UK</a>
+        <a href="loan-calculator-canada.html">Canada</a>
+        <a href="loan-calculator-uae.html">UAE</a>
+        <a href="loan-calculator-morocco.html">Morocco</a>
+        <a href="loan-calculator-australia.html">Australia</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
         <a href="terms.html">Terms</a>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="container">
-    <header class="page-header">
-      <h1>LoanWise</h1>
-      <p class="subtitle">Simple Loan Calculator</p>
-      <p class="help-text">Estimate your monthly loan payment in seconds.</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span aria-current="page">Home</span>
+    </nav>
+    <header class="page-header page-header--compact">
+      <h1>Loan Calculator — Your Payment in Seconds (Free &amp; Online)</h1>
+      <p class="subtitle subtitle--benefit">9 currencies · monthly payment + total interest—fast, simple, no signup</p>
+      <p class="intro-lead">Get a clear payment in seconds—free, online, and simple. No signup required. Start calculating your loan now using the form below.</p>
+      <p class="last-updated">Last updated: March 2026</p>
     </header>
+
+    <div class="ad-slot ad-top" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
 
     <main class="calculator">
       <div class="input-group">
@@ -46,6 +120,7 @@
           <option value="GBP">GBP - British Pound</option>
           <option value="MAD">MAD - Moroccan Dirham</option>
           <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
           <option value="CHF">CHF - Swiss Franc</option>
           <option value="JPY">JPY - Japanese Yen</option>
           <option value="AED">AED - UAE Dirham</option>
@@ -87,7 +162,7 @@
         >
       </div>
 
-      <button type="button" id="calculateBtn">Calculate</button>
+      <button type="button" id="calculateBtn">Calculate your loan now</button>
 
       <div class="results" id="results">
         <div class="result-card">
@@ -105,48 +180,378 @@
       </div>
     </main>
 
-    <p class="disclaimer">This calculator provides an estimate for informational purposes only.</p>
+    <p class="help-text help-text--below">Need a specialized tool? Try <a href="car-loan-calculator.html">car</a>, <a href="auto-loan-calculator.html">auto</a>, <a href="personal-loan-calculator.html">personal</a>, <a href="business-loan-calculator.html">business</a>, <a href="mortgage-calculator.html">mortgage</a>, <a href="interest-calculator.html">interest</a>, or <a href="simple-interest-calculator.html">simple interest</a>—all free.</p>
+
+    <nav class="silo-links" aria-label="Loan calculators in this section">
+      <p class="silo-links-intro">In this section:</p>
+      <p class="silo-links-row">
+        <a href="loan-5000-monthly-payment.html">$5k</a> ·
+        <a href="loan-10000-monthly-payment.html">$10k</a> ·
+        <a href="loan-20000-monthly-payment.html">$20k</a> ·
+        <a href="loan-calculator-with-down-payment.html">Down payment</a> ·
+        <a href="loan-calculator-with-extra-payments.html">Extra payments</a> ·
+        <a href="loan-calculator-with-interest-breakdown.html">Interest breakdown</a> ·
+        <a href="how-to-calculate-loan-monthly-payment.html">How to calculate</a> ·
+        <a href="loan-calculator-usa.html">USA</a> ·
+        <a href="loan-calculator-uk.html">UK</a>
+      </p>
+    </nav>
+
+    <section class="content-section popular-calculations" aria-labelledby="popular-calculations-heading">
+      <h2 id="popular-calculations-heading">Popular Calculations</h2>
+      <p class="popular-calculations-lede">Jump to the calculator you need—by loan type, amount, or country:</p>
+      <ul class="sitemap-list">
+        <li><a href="index.html">Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="car-loan-25000-monthly-payment.html">Car Loan for $25,000</a></li>
+        <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+        <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+        <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+        <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+        <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+        <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+        <li><a href="how-much-car-loan-can-i-afford.html">How Much Car Loan Can I Afford</a></li>
+        <li><a href="loan-calculator-with-interest-breakdown.html">Loan with Interest Breakdown</a></li>
+        <li><a href="sitemap.html">Full Sitemap</a></li>
+      </ul>
+    </section>
+
+    <section class="content-section home-trust" aria-labelledby="trust-heading">
+      <h2 id="trust-heading">Why use LoanWise?</h2>
+      <p class="home-section-lede">Clear numbers before you talk to a lender—no account, no paywall.</p>
+      <ul class="trust-points">
+        <li class="trust-point">
+          <span class="trust-point-icon" aria-hidden="true">✓</span>
+          <div>
+            <strong class="trust-point-title">Fast and accurate estimates</strong>
+            <p class="trust-point-text">See monthly payment, total paid, and interest in one click using standard amortization math.</p>
+          </div>
+        </li>
+        <li class="trust-point">
+          <span class="trust-point-icon" aria-hidden="true">✓</span>
+          <div>
+            <strong class="trust-point-title">Multiple currencies supported</strong>
+            <p class="trust-point-text">Choose from USD, EUR, GBP, MAD, CAD, AUD, CHF, JPY, and AED to match your situation.</p>
+          </div>
+        </li>
+        <li class="trust-point">
+          <span class="trust-point-icon" aria-hidden="true">✓</span>
+          <div>
+            <strong class="trust-point-title">Free and easy to use</strong>
+            <p class="trust-point-text">No paywalls or complicated setup—just enter your numbers and get results right away.</p>
+          </div>
+        </li>
+        <li class="trust-point">
+          <span class="trust-point-icon" aria-hidden="true">✓</span>
+          <div>
+            <strong class="trust-point-title">No registration required</strong>
+            <p class="trust-point-text">We don’t ask you to create an account. Your inputs stay in your browser for this session.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section home-how-to" aria-labelledby="how-to-heading">
+      <h2 id="how-to-heading">How to Use This Calculator</h2>
+      <p class="home-section-lede">Follow these steps to estimate your loan payment:</p>
+      <ol class="how-to-steps">
+        <li><strong>Enter your loan amount</strong> — the total you plan to borrow (principal).</li>
+        <li><strong>Enter the interest rate</strong> — the annual percentage your lender quotes (not the monthly rate).</li>
+        <li><strong>Enter the loan term</strong> — how long you’ll repay the loan, in months (for example, 36 for three years).</li>
+        <li><strong>Click “Calculate your loan now”</strong> — your monthly payment, total paid, and total interest appear below.</li>
+      </ol>
+      <p class="how-to-note">You can change any value and calculate again to compare different scenarios.</p>
+    </section>
+
+    <section class="content-section disclaimer-important" aria-labelledby="disclaimer-heading">
+      <h2 id="disclaimer-heading">Important disclaimer</h2>
+      <p class="disclaimer-important-text">Estimates only. Your lender sets the real rate, fees, and payment.</p>
+      <p class="disclaimer-important-text">Compare scenarios with our <a href="car-loan-calculator.html">car loan calculator</a>, <a href="mortgage-calculator.html">mortgage calculator</a>, or <a href="personal-loan-calculator.html">personal loan calculator</a>—same transparent math.</p>
+    </section>
+
+    <section class="popular-calculators" aria-labelledby="popular-calculators-heading">
+      <h2 id="popular-calculators-heading" class="popular-calculators-title">Popular Calculators</h2>
+      <p class="popular-calculators-lede">Jump to a specialized tool—the <a href="car-loan-calculator.html">car loan calculator</a> is a popular next step—or open any loan type or regional calculator below. For targeted guides, try <a href="loan-calculator-comparison.html">loan calculator comparison</a>, <a href="how-much-car-loan-can-i-afford.html">how much car loan can I afford</a>, <a href="car-loan-monthly-payment-calculator.html">car loan monthly payment calculator</a>, <a href="mortgage-30-year-calculator.html">mortgage 30-year calculator</a>, <a href="loan-calculator-with-interest-breakdown.html">loan calculator with interest breakdown</a>, or <a href="simple-loan-payment-example.html">simple loan payment example</a>.</p>
+      <div class="popular-calculators-grid">
+        <a href="car-loan-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Car Loan Calculator</h3>
+          <p class="calc-card-desc">Estimate monthly payments for your next vehicle.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="auto-loan-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Auto Loan Calculator</h3>
+          <p class="calc-card-desc">Auto financing with monthly, total, and interest.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="personal-loan-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Personal Loan Calculator</h3>
+          <p class="calc-card-desc">Plan unsecured personal loan payments quickly.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="business-loan-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Business Loan Calculator</h3>
+          <p class="calc-card-desc">Model term-loan payments for your business.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="mortgage-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Mortgage Calculator</h3>
+          <p class="calc-card-desc">Home loan principal and interest estimates.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="interest-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Interest Calculator</h3>
+          <p class="calc-card-desc">Simple interest, loan interest, and amortization.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="simple-interest-calculator.html" class="calc-card">
+          <h3 class="calc-card-title">Simple Interest Calculator</h3>
+          <p class="calc-card-desc">I = P×R×T and compare with compound growth.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-usa.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator USA</h3>
+          <p class="calc-card-desc">US loans in USD with local context and tips.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-uk.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator UK</h3>
+          <p class="calc-card-desc">UK loans in GBP—rates and terms explained.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-canada.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator Canada</h3>
+          <p class="calc-card-desc">Canadian loans in CAD for personal planning.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-uae.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator UAE</h3>
+          <p class="calc-card-desc">UAE financing in AED, including local notes.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-morocco.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator Morocco</h3>
+          <p class="calc-card-desc">Moroccan loans in MAD with practical guidance.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+        <a href="loan-calculator-australia.html" class="calc-card">
+          <h3 class="calc-card-title">Loan Calculator Australia</h3>
+          <p class="calc-card-desc">Australian loans in AUD and comparison-rate context.</p>
+          <span class="calc-card-cta">Calculate free now</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="cta-row">
+      <p class="cta-car-loan">
+        <a href="car-loan-calculator.html" class="cta-link">Try our Car Loan Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="auto-loan-calculator.html" class="cta-link">Auto Loan Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="personal-loan-calculator.html" class="cta-link">Personal Loan Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="business-loan-calculator.html" class="cta-link">Business Loan Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="mortgage-calculator.html" class="cta-link">Mortgage Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="interest-calculator.html" class="cta-link">Interest Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="simple-interest-calculator.html" class="cta-link">Simple Interest Calculator</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-usa.html" class="cta-link">Loan Calculator USA</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-uk.html" class="cta-link">Loan Calculator UK</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-canada.html" class="cta-link">Loan Calculator Canada</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-uae.html" class="cta-link">Loan Calculator UAE</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-morocco.html" class="cta-link">Loan Calculator Morocco</a>
+      </p>
+      <p class="cta-car-loan">
+        <a href="loan-calculator-australia.html" class="cta-link">Loan Calculator Australia</a>
+      </p>
+    </div>
 
     <section class="content-section" id="how-to-calculate">
-      <h2>How to Calculate Your Monthly Loan Payment</h2>
-      <p>Your monthly loan payment depends on three main factors: the amount you borrow, the interest rate charged by the lender, and the length of time you have to repay the loan. A higher loan amount or interest rate will increase your monthly payment, while a longer loan term typically lowers it by spreading the cost over more months.</p>
+      <h2>How your monthly loan payment is calculated</h2>
+      <p>Most installment loans use a fixed interest rate and the same payment every month. Part of each payment covers interest on what you still owe, and the rest reduces principal. Early on, interest is a bigger slice; near the end, almost everything goes to principal.</p>
+      <p>Three numbers control the payment: how much you borrow, the annual interest rate, and how many months you take to repay. Raise the amount or the rate and the payment goes up. Stretch the term and the payment usually falls—but you often pay more interest in total over the life of the loan.</p>
 
-      <h3>Understanding Your Results</h3>
+      <h2>Real-world example</h2>
+      <p>Suppose you borrow <strong>$15,000</strong> at <strong>7.5%</strong> for <strong>48 months</strong>. Your monthly payment would be about <strong>$363</strong>. Over four years you’d pay roughly <strong>$17,400</strong> in total—<strong>$2,400</strong> of that is interest. If you extended the same loan to 60 months, the payment drops to around <strong>$300</strong>, but total interest rises to about <strong>$3,000</strong>. Use the calculator above to plug in your own numbers and compare.</p>
+
+      <h2>What affects your loan payment</h2>
+      <ul>
+        <li><strong>Loan amount (principal)</strong> — Borrowing more increases both your monthly payment and total interest.</li>
+        <li><strong>Interest rate</strong> — A higher rate raises the payment and the total cost. Even a 1% difference can add hundreds or thousands over the life of the loan.</li>
+        <li><strong>Loan term</strong> — A longer term lowers the monthly payment but usually means more interest paid over time.</li>
+        <li><strong>Fees</strong> — Origination or processing fees can be rolled into the loan, effectively increasing the amount you repay.</li>
+      </ul>
+
+      <h2>Understanding your results</h2>
       <dl class="result-definitions">
-        <dt>Monthly Payment</dt>
-        <dd>The fixed amount you pay each month until the loan is fully repaid. This stays the same throughout the loan term.</dd>
-        <dt>Total Payment</dt>
-        <dd>The full amount you will pay over the entire life of the loan, including both the principal and all interest.</dd>
-        <dt>Total Interest</dt>
-        <dd>The extra cost of borrowing. This is the difference between your total payment and the original loan amount.</dd>
+        <dt>Monthly payment</dt>
+        <dd>The amount due each period until the loan is paid off. On a standard fixed-rate loan, this stays steady so you can budget.</dd>
+        <dt>Total payment</dt>
+        <dd>Everything you will send the lender over the full term: original principal plus all interest, in this model.</dd>
+        <dt>Total interest</dt>
+        <dd>The cost of borrowing—the gap between total payment and the amount you first borrowed.</dd>
       </dl>
 
-      <h3>Why Use LoanWise?</h3>
-      <p>LoanWise is fast, simple, and designed for everyday use. Get instant estimates without signing up or downloading anything. The calculator works smoothly on your phone or desktop and supports multiple currencies—USD, EUR, GBP, MAD, CAD, CHF, JPY, and AED—so you can plan in the currency that matters to you.</p>
+      <h2>How to use this for real decisions</h2>
+      <p>Try a few combinations before you talk to a bank. If you are deciding between 48 and 60 months, run both. If you are weighing two rate quotes, plug each in and compare total interest, not only the monthly line.</p>
+      <p>Pick the currency that matches your country or bank statement so the formatting feels familiar. For specialized tools, we also offer a <a href="car-loan-calculator.html">car loan calculator</a>, <a href="mortgage-calculator.html">mortgage calculator</a>, <a href="personal-loan-calculator.html">personal loan calculator</a>, and <a href="business-loan-calculator.html">business loan calculator</a>, plus country pages such as <a href="loan-calculator-usa.html">USA</a> or <a href="loan-calculator-uk.html">UK</a>.</p>
 
-      <h3>Frequently Asked Questions</h3>
+      <h2>Frequently asked questions</h2>
       <dl class="faq-list">
         <dt>What affects my monthly loan payment?</dt>
-        <dd>Three factors drive your monthly payment: the loan amount (how much you borrow), the annual interest rate (the cost of borrowing), and the loan term (how many months you have to repay). Changing any of these will change your monthly payment.</dd>
-        <dt>Does this calculator include extra bank fees?</dt>
-        <dd>No. This calculator estimates principal and interest only. Your actual payment may be higher if your lender charges origination fees, insurance, or other costs. Always check with your lender for the exact amount.</dd>
-        <dt>Can I use this calculator for a 0% interest loan?</dt>
-        <dd>Yes. Enter 0 for the interest rate to see your monthly payment when there is no interest. Your monthly payment will simply be the loan amount divided by the number of months.</dd>
+        <dd>Principal, annual rate, and term in months. Change any one and the payment changes. Small rate moves matter more on large balances and long terms.</dd>
+        <dt>Does this include bank fees or insurance?</dt>
+        <dd>No. We model principal and interest only. If your lender bundles fees into the loan, add them to the amount you enter; otherwise budget fees separately.</dd>
+        <dt>Can I use 0% interest?</dt>
+        <dd>Yes. Enter 0 for the rate. The payment is approximately the loan amount divided by the number of months, before any real-world fees.</dd>
+        <dt>Is the result a guarantee from a lender?</dt>
+        <dd>No. It is a mathematical estimate. Your bank may round differently or apply promotions you have not entered here.</dd>
+        <dt>How is this different from a credit card minimum?</dt>
+        <dd>Cards revolve and minimums can stretch repayment for years. This tool assumes a fixed payoff date like a typical term loan.</dd>
       </dl>
     </section>
+
+                                <div class="ad-slot ad-middle" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+                <section class="related-calculators" aria-labelledby="related-calculators-heading">
+      <h2 id="related-calculators-heading">Related Calculators</h2>
+      <ul class="related-calculators-list">
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+      </ul>
+    </section>
+
+    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
   </div>
 
-  <footer class="site-footer">
+      <footer class="site-footer">
     <div class="site-footer-inner">
-      <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
+      <nav class="footer-map" aria-label="Footer links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Loan Calculator</a></li>
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+            <li><a href="interest-calculator.html">Interest Calculator</a></li>
+            <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+            <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Car Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+            <li><a href="auto-loan-refinance-calculator.html">Auto Loan Refinance</a></li>
+            <li><a href="car-loan-20000-monthly-payment.html">Car Loan for $20,000</a></li>
+            <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+            <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
+            <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
+            <li><a href="auto-loan-calculator-60-months.html">60 Month Auto Loan</a></li>
+            <li><a href="how-much-car-loan-can-i-afford.html">How Much Can I Afford</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Personal Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="bad-credit-loan-calculator.html">Bad Credit Loan</a></li>
+            <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+            <li><a href="personal-loan-20000-payment.html">Personal Loan for $20,000</a></li>
+            <li><a href="debt-consolidation-loan-calculator.html">Debt Consolidation</a></li>
+            <li><a href="home-improvement-loan-calculator.html">Home Improvement Loan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Mortgage Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+            <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+            <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+            <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Country Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="loan-calculator-usa.html">USA</a></li>
+            <li><a href="loan-calculator-uk.html">UK</a></li>
+            <li><a href="loan-calculator-canada.html">Canada</a></li>
+            <li><a href="loan-calculator-australia.html">Australia</a></li>
+            <li><a href="loan-calculator-uae.html">UAE</a></li>
+            <li><a href="loan-calculator-morocco.html">Morocco</a></li>
+            <li><a href="loan-calculator-india.html">India</a></li>
+            <li><a href="loan-calculator-singapore.html">Singapore</a></li>
+            <li><a href="loan-calculator-new-zealand.html">New Zealand</a></li>
+            <li><a href="loan-calculator-ireland.html">Ireland</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

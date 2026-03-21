@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Loan Calculator – Payment Free &amp; Fast</title>
+  <meta name="description" content="Calculate business loan monthly payment and total interest. Free, instant. Compare terms easily. No signup.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://loanwisecalc.com/business-loan-calculator.html">
+  <meta property="og:title" content="Business Loan Calculator – Payment Free &amp; Fast">
+  <meta property="og:description" content="Calculate business loan monthly payment and total interest. Free, instant. Compare terms easily. No signup.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this include origination or packaging fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Either enter the net loan amount or increase the principal by any financed fees. Your truth-in-lending or loan estimate paperwork should spell out the full cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it for SBA or guaranteed loans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If repayment is standard fixed principal-and-interest, the payment formula matches. Government programs may add guaranty fees or different terms\u2014verify with your lender."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about interest-only or variable rates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interest-only stretches lower payments early but requires a different payoff plan. Variable rates change with the market. Here we assume one fixed rate for the whole term you enter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I borrow the maximum I qualify for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Leave room for slow months and unexpected expenses. A smaller loan with a comfortable payment is often less stressful than maxing out leverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does this relate to my P&L?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The payment here is cash out the door each month. Your bookkeeper may split principal and interest differently for taxes. Use this tool for cash planning; rely on a pro for tax treatment."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-tool-calculator">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">LoanWise</span>
+        </a>
+        <div class="site-nav-scroll">
+        <a href="index.html">Home</a>
+        <a href="car-loan-calculator.html">Car Loan</a>
+        <a href="auto-loan-calculator.html">Auto Loan</a>
+        <a href="personal-loan-calculator.html">Personal Loan</a>
+        <a href="business-loan-calculator.html">Business Loan</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a href="simple-interest-calculator.html">Simple Interest</a>
+        <a href="loan-calculator-usa.html">USA</a>
+        <a href="loan-calculator-uk.html">UK</a>
+        <a href="loan-calculator-canada.html">Canada</a>
+        <a href="loan-calculator-uae.html">UAE</a>
+        <a href="loan-calculator-morocco.html">Morocco</a>
+        <a href="loan-calculator-australia.html">Australia</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="terms.html">Terms</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Business Loan Calculator</span>
+    </nav>
+    <header class="page-header page-header--compact">
+      <h1>Business Loan Calculator — Simple, Fast Payment Planning</h1>
+      <p class="subtitle subtitle--benefit">Term-loan style payments—enter amount, rate, and months</p>
+      <p class="intro-lead">Stress-test your business payment in seconds. Free and online—no signup required. Start calculating your loan now.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="ad-slot ad-top" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <main class="calculator">
+      <div class="input-group">
+        <label for="currency">Currency</label>
+        <select id="currency" aria-label="Select currency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="MAD">MAD - Moroccan Dirham</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AED">AED - UAE Dirham</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="loanAmount">Business loan amount</label>
+        <input type="number" id="loanAmount" placeholder="e.g. 100000" min="1" step="100">
+      </div>
+
+      <div class="input-group">
+        <label for="interestRate">Interest rate (% per year)</label>
+        <input type="number" id="interestRate" placeholder="e.g. 9.5" min="0" max="100" step="0.1">
+      </div>
+
+      <div class="input-group">
+        <label for="loanTerm">Loan term (months)</label>
+        <input type="number" id="loanTerm" placeholder="e.g. 60" min="1" max="600" step="1">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate your loan now</button>
+
+      <div class="results" id="results">
+        <div class="result-card">
+          <p class="result-label">Monthly Payment</p>
+          <p class="result-value" id="monthlyPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Payment</p>
+          <p class="result-value" id="totalPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Interest</p>
+          <p class="result-value" id="totalInterest">—</p>
+        </div>
+      </div>
+    </main>
+
+    <p class="help-text help-text--below">For consumers: <a href="personal-loan-calculator.html">personal</a>. Property: <a href="mortgage-calculator.html">mortgage</a>. Vehicles: <a href="car-loan-calculator.html">car</a> / <a href="auto-loan-calculator.html">auto</a>.</p>
+
+    <p class="disclaimer">Estimate only—not legal or financial advice. <a href="index.html">Home</a></p>
+
+    <nav class="silo-links" aria-label="Business loan calculators in this section">
+      <p class="silo-links-intro">In this section:</p>
+      <p class="silo-links-row">
+        <a href="business-loan-10000-payment.html">$10k</a> ·
+        <a href="business-loan-20000-payment.html">$20k</a> ·
+        <a href="business-loan-50000-payment.html">$50k</a>
+      </p>
+    </nav>
+
+    <section class="popular-calculations" aria-labelledby="popular-calculations-heading">
+      <h2 id="popular-calculations-heading">Popular Calculations</h2>
+      <p class="popular-calculations-lede">Jump to the calculator you need—business, personal, mortgage, or by amount:</p>
+      <ul class="sitemap-list">
+        <li><a href="index.html">Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="business-loan-10000-payment.html">Business Loan for $10,000</a></li>
+        <li><a href="business-loan-50000-payment.html">Business Loan for $50,000</a></li>
+        <li><a href="car-loan-25000-monthly-payment.html">Car Loan for $25,000</a></li>
+        <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+        <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+        <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+        <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+        <li><a href="how-much-car-loan-can-i-afford.html">How Much Car Loan Can I Afford</a></li>
+        <li><a href="sitemap.html">Full Sitemap</a></li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>How to use this calculator</h2>
+      <ol>
+        <li><strong>Select your currency</strong> — USD, GBP, EUR, or another to match your loan.</li>
+        <li><strong>Enter the loan amount</strong> — The principal you’re borrowing (use the net amount funded, or add financed fees to principal).</li>
+        <li><strong>Enter the interest rate</strong> — The annual rate (APR) your lender quoted for the term.</li>
+        <li><strong>Enter the term in months</strong> — 12, 24, 36, 60, or whatever your lender offers.</li>
+        <li><strong>Click Calculate</strong> — See your monthly payment, total repayment, and total interest.</li>
+      </ol>
+
+      <h2>Real-world example</h2>
+      <p>A <strong>$50,000</strong> business loan at <strong>8%</strong> for <strong>36 months</strong> means a monthly payment of about <strong>$1,567</strong>. Over three years you’d repay roughly <strong>$56,400</strong> in total—<strong>$6,400</strong> in interest. Extend to 60 months and the payment drops to <strong>$1,014</strong>, but total interest rises to about <strong>$10,840</strong>. Use the calculator above to model your own scenario.</p>
+
+      <h2>What affects your business loan payment</h2>
+      <ul>
+        <li><strong>Loan amount</strong> — Borrowing more increases the monthly payment and total interest.</li>
+        <li><strong>Interest rate</strong> — Revenue, time in business, credit profile, and collateral affect the rate.</li>
+        <li><strong>Loan term</strong> — Shorter terms mean higher payments but less total interest.</li>
+        <li><strong>Fees</strong> — Origination or packaging fees can be financed—add them to principal for a truer payment estimate.</li>
+      </ul>
+
+      <h2>How this business loan estimate works</h2>
+      <p>This page models a classic term-style loan: you borrow a fixed amount, pay the same amount each month, and the loan is fully paid at the end of the term. Interest accrues on the declining balance, which is how many equipment loans and working-capital term products are structured.</p>
+      <p>It does not replace advice from your accountant or lender. Lines of credit, revenue-based financing, balloon payments, and seasonal structures behave differently. Always read your note, any covenants, and personal or business guarantees before you sign.</p>
+
+      <h2>Typical reasons owners borrow</h2>
+      <p>Common uses include buying machinery, building inventory before a busy season, refinancing expensive debt, or bridging cash flow when customers pay slowly. Underwriters usually weigh revenue trends, time in business, credit profile, and collateral.</p>
+      <p>When you compare offers, look at APR or total payback—not only the monthly line. A slightly lower payment on a longer term can cost more overall. For consumer-style amortization in other currencies, our <a href="index.html">main loan calculator</a> works the same way.</p>
+
+      <h2>Entering numbers that match your offer</h2>
+      <p>Use the net funded amount you actually receive, or add closing costs to principal if the lender rolls them in. Enter the annual rate as quoted for the amortizing period. If your loan has a draw period or changing rate, this single-term estimate is only a snapshot.</p>
+      <p>Personal or vehicle borrowing for the owner—rather than the business—may be clearer on our <a href="personal-loan-calculator.html">personal loan calculator</a> or <a href="car-loan-calculator.html">car loan calculator</a>. Commercial property can be compared with the <a href="mortgage-calculator.html">mortgage calculator</a> when repayment looks like a long fixed-rate loan.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq-list">
+        <dt>Does this include origination or packaging fees?</dt>
+        <dd>No. Either enter the net loan amount or increase the principal by any financed fees. Your truth-in-lending or loan estimate paperwork should spell out the full cost.</dd>
+        <dt>Can I use it for SBA or guaranteed loans?</dt>
+        <dd>If repayment is standard fixed principal-and-interest, the payment formula matches. Government programs may add guaranty fees or different terms—verify with your lender.</dd>
+        <dt>What about interest-only or variable rates?</dt>
+        <dd>Interest-only stretches lower payments early but requires a different payoff plan. Variable rates change with the market. Here we assume one fixed rate for the whole term you enter.</dd>
+        <dt>Should I borrow the maximum I qualify for?</dt>
+        <dd>Not necessarily. Leave room for slow months and unexpected expenses. A smaller loan with a comfortable payment is often less stressful than maxing out leverage.</dd>
+        <dt>How does this relate to my P&amp;L?</dt>
+        <dd>The payment here is cash out the door each month. Your bookkeeper may split principal and interest differently for taxes. Use this tool for cash planning; rely on a pro for tax treatment.</dd>
+      </dl>
+    </section>
+
+                                <div class="ad-slot ad-middle" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+                <section class="related-calculators" aria-labelledby="related-calculators-heading">
+      <h2 id="related-calculators-heading">Related Calculators</h2>
+      <ul class="related-calculators-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business-loan-10000-payment.html">Business Loan for $10,000</a></li>
+        <li><a href="business-loan-50000-payment.html">Business Loan for $50,000</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+      </ul>
+    </section>
+
+    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+  </div>
+
+      <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-map" aria-label="Footer links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Loan Calculator</a></li>
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+            <li><a href="interest-calculator.html">Interest Calculator</a></li>
+            <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+            <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Car Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+            <li><a href="auto-loan-refinance-calculator.html">Auto Loan Refinance</a></li>
+            <li><a href="car-loan-20000-monthly-payment.html">Car Loan for $20,000</a></li>
+            <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+            <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
+            <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
+            <li><a href="auto-loan-calculator-60-months.html">60 Month Auto Loan</a></li>
+            <li><a href="how-much-car-loan-can-i-afford.html">How Much Can I Afford</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Personal Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="bad-credit-loan-calculator.html">Bad Credit Loan</a></li>
+            <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+            <li><a href="personal-loan-20000-payment.html">Personal Loan for $20,000</a></li>
+            <li><a href="debt-consolidation-loan-calculator.html">Debt Consolidation</a></li>
+            <li><a href="home-improvement-loan-calculator.html">Home Improvement Loan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Mortgage Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+            <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+            <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+            <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Country Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="loan-calculator-usa.html">USA</a></li>
+            <li><a href="loan-calculator-uk.html">UK</a></li>
+            <li><a href="loan-calculator-canada.html">Canada</a></li>
+            <li><a href="loan-calculator-australia.html">Australia</a></li>
+            <li><a href="loan-calculator-uae.html">UAE</a></li>
+            <li><a href="loan-calculator-morocco.html">Morocco</a></li>
+            <li><a href="loan-calculator-india.html">India</a></li>
+            <li><a href="loan-calculator-singapore.html">Singapore</a></li>
+            <li><a href="loan-calculator-new-zealand.html">New Zealand</a></li>
+            <li><a href="loan-calculator-ireland.html">Ireland</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

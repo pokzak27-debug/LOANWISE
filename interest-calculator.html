@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest Calculator – Free &amp; Instant</title>
+  <meta name="description" content="Calculate interest on any loan. Free, easy tool. See total cost. No signup—try now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://loanwisecalc.com/interest-calculator.html">
+  <meta property="og:title" content="Interest Calculator – Free &amp; Instant">
+  <meta property="og:description" content="Calculate interest on any loan. Free, easy tool. See total cost. No signup—try now.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the simple interest formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I = P \u00d7 R \u00d7 T, where P is principal, R is the annual rate as a decimal (5% \u2192 0.05), and T is time in years. Total repayment is P + I if nothing else changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is loan interest usually higher than simple interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With amortization you pay interest on the outstanding balance while you gradually pay principal down. Simple interest ignores that schedule and only multiplies the starting principal by rate and time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the simple section compound?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Simple interest does not compound on itself. Compound growth needs a different formula (see our simple interest page for a side-by-side example)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enter a rate as monthly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page expects an annual rate for both tools. If you only have a monthly rate, convert carefully or confirm with your lender before relying on the output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this include loan fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Fees would need to be added to principal manually if they are financed, or tracked outside the calculator."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-tool-calculator">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">LoanWise</span>
+        </a>
+        <div class="site-nav-scroll">
+        <a href="index.html">Home</a>
+        <a href="car-loan-calculator.html">Car Loan</a>
+        <a href="auto-loan-calculator.html">Auto Loan</a>
+        <a href="personal-loan-calculator.html">Personal Loan</a>
+        <a href="business-loan-calculator.html">Business Loan</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a href="simple-interest-calculator.html">Simple Interest</a>
+        <a href="loan-calculator-usa.html">USA</a>
+        <a href="loan-calculator-uk.html">UK</a>
+        <a href="loan-calculator-canada.html">Canada</a>
+        <a href="loan-calculator-uae.html">UAE</a>
+        <a href="loan-calculator-morocco.html">Morocco</a>
+        <a href="loan-calculator-australia.html">Australia</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="terms.html">Terms</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Interest Calculator</span>
+    </nav>
+    <header class="page-header page-header--compact">
+      <h1>Interest Calculator — Loan + Simple Interest, Free Online</h1>
+      <p class="subtitle subtitle--benefit">Loan tool below; scroll for simple interest—both fast and free</p>
+      <p class="intro-lead">Run loan or simple-interest numbers in seconds. Free, online, no signup—start calculating now.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="ad-slot ad-top" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <main class="calculator">
+      <div class="input-group">
+        <label for="currency">Currency</label>
+        <select id="currency" aria-label="Select currency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="MAD">MAD - Moroccan Dirham</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AED">AED - UAE Dirham</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="loanAmount">Principal / Loan Amount</label>
+        <input type="number" id="loanAmount" placeholder="e.g. 10000" min="1" step="100">
+      </div>
+
+      <div class="input-group">
+        <label for="interestRate">Annual Interest Rate (%)</label>
+        <input type="number" id="interestRate" placeholder="e.g. 7.5" min="0" max="100" step="0.1">
+      </div>
+
+      <div class="input-group">
+        <label for="loanTerm">Loan Term (months)</label>
+        <input type="number" id="loanTerm" placeholder="e.g. 36" min="1" max="600" step="1">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate your loan now</button>
+
+      <div class="results" id="results">
+        <div class="result-card">
+          <p class="result-label">Monthly Payment</p>
+          <p class="result-value" id="monthlyPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Payment</p>
+          <p class="result-value" id="totalPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Interest</p>
+          <p class="result-value" id="totalInterest">—</p>
+        </div>
+      </div>
+    </main>
+
+    <p class="help-text help-text--below">Year-by-year split: <a href="loan-calculator-with-interest-breakdown.html">interest breakdown</a>. Walk-through: <a href="simple-loan-payment-example.html">payment example</a>. <a href="simple-interest-calculator.html">Simple vs compound</a> · <a href="index.html">Loan</a> · <a href="car-loan-calculator.html">Car</a> · <a href="mortgage-calculator.html">Mortgage</a></p>
+
+    <section class="content-section" style="margin-top: 1rem; padding-top: 1.25rem; border-top: 1px solid var(--color-border);">
+      <h2>Simple interest calculator</h2>
+      <p><strong>I = P × R × T</strong> — principal, annual rate as a decimal, time in years.</p>
+      <p>No monthly payment schedule? Use this block. For installments, use the loan section above.</p>
+    </section>
+
+    <div class="calculator" id="simple-interest-calc">
+      <div class="input-group">
+        <label for="simplePrincipal">Principal (P)</label>
+        <input type="number" id="simplePrincipal" placeholder="e.g. 5000" min="0" step="100">
+      </div>
+
+      <div class="input-group">
+        <label for="simpleRate">Annual Rate % (R)</label>
+        <input type="number" id="simpleRate" placeholder="e.g. 5" min="0" max="100" step="0.1">
+      </div>
+
+      <div class="input-group">
+        <label for="simpleTime">Time (years)</label>
+        <input type="number" id="simpleTime" placeholder="e.g. 2" min="0" max="100" step="0.1">
+      </div>
+
+      <button type="button" id="simpleCalculateBtn">Calculate simple interest now</button>
+
+      <div class="results" id="simpleResults">
+        <div class="result-card">
+          <p class="result-label">Simple Interest (I)</p>
+          <p class="result-value" id="simpleInterestOut">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Amount (P + I)</p>
+          <p class="result-value" id="simpleTotalOut">—</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Estimates only. <a href="index.html">Home</a> · <a href="mortgage-calculator.html">Mortgage</a> · <a href="car-loan-calculator.html">Car loan</a></p>
+
+    
+    <div class="ad-slot ad-inline" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+<section class="content-section">
+      <h2>How to use this calculator</h2>
+      <p>This page has two tools:</p>
+      <ol>
+        <li><strong>Loan section (top)</strong> — Enter loan amount, annual rate, and term in months to get monthly payment, total repayment, and total interest. Use this for car loans, personal loans, mortgages, and other installment debt.</li>
+        <li><strong>Simple interest block</strong> — Enter principal, annual rate, and time in years to get total interest and total amount. Use this when there’s no monthly payment schedule (e.g. a single lump-sum loan).</li>
+      </ol>
+
+      <h2>Real-world example</h2>
+      <p>For a <strong>$20,000</strong> loan at <strong>8%</strong> over <strong>48 months</strong>, the loan tool shows a monthly payment of about <strong>$488</strong>, total repayment of <strong>$23,410</strong>, and <strong>$3,410</strong> in interest. The same $20,000 at 8% for 4 years as simple interest would be <strong>$6,400</strong> in interest (I = 20,000 × 0.08 × 4)—different because the loan tool models amortization, where you pay principal down over time.</p>
+
+      <h2>What affects your loan interest</h2>
+      <ul>
+        <li><strong>Principal</strong> — A larger loan means more interest, whether simple or amortized.</li>
+        <li><strong>Interest rate</strong> — Higher rates increase both monthly payments and total interest.</li>
+        <li><strong>Term</strong> — A longer term usually lowers the payment but increases total interest on an amortizing loan.</li>
+        <li><strong>Payment structure</strong> — Amortizing loans charge interest on the declining balance; simple interest uses the original principal for the full term.</li>
+      </ul>
+
+      <h2>Two ways interest adds up</h2>
+      <p><strong>Simple interest</strong> only grows on the original principal. I = P × R × T—nothing “rolls up” unless the principal changes.</p>
+      <p><strong>Amortizing loans</strong> (most cars, homes, personal loans) charge interest on the balance each month. Payments stay flat, but early payments are mostly interest.</p>
+      <p>Total interest on an installment loan is often higher than simple interest on the same numbers—you don’t pay all principal on day one.</p>
+
+      <h2>Which tool should you use?</h2>
+      <p><strong>Simple block:</strong> principal + annual rate + years → total interest (no payment schedule).</p>
+      <p><strong>Loan section:</strong> term in months → payment, total paid, total interest.</p>
+      <p>Compare simple vs compound on our <a href="simple-interest-calculator.html">simple interest calculator</a>. Quick payments only: <a href="index.html">loan calculator</a>.</p>
+
+      <h2>Reading results responsibly</h2>
+      <p>Planning figures only. Contracts may use different day-count rules, rounding, or fees.</p>
+      <p>Match annual vs monthly rates to your lender’s quote. Business term debt: <a href="business-loan-calculator.html">business loan calculator</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq-list">
+        <dt>What is the simple interest formula?</dt>
+        <dd>I = P × R × T, where P is principal, R is the annual rate as a decimal (5% → 0.05), and T is time in years. Total repayment is P + I if nothing else changes.</dd>
+        <dt>Why is loan interest usually higher than simple interest?</dt>
+        <dd>With amortization you pay interest on the outstanding balance while you gradually pay principal down. Simple interest ignores that schedule and only multiplies the starting principal by rate and time.</dd>
+        <dt>Does the simple section compound?</dt>
+        <dd>No. Simple interest does not compound on itself. Compound growth needs a different formula (see our simple interest page for a side-by-side example).</dd>
+        <dt>Can I enter a rate as monthly?</dt>
+        <dd>This page expects an annual rate for both tools. If you only have a monthly rate, convert carefully or confirm with your lender before relying on the output.</dd>
+        <dt>Does this include loan fees?</dt>
+        <dd>No. Fees would need to be added to principal manually if they are financed, or tracked outside the calculator.</dd>
+      </dl>
+    </section>
+
+                                <div class="ad-slot ad-middle" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+                <section class="related-calculators" aria-labelledby="related-calculators-heading">
+      <h2 id="related-calculators-heading">Related Calculators</h2>
+      <ul class="related-calculators-list">
+        <li><a href="index.html">Loan Calculator</a></li>
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+      </ul>
+    </section>
+
+    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+  </div>
+
+      <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-map" aria-label="Footer links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Loan Calculator</a></li>
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+            <li><a href="interest-calculator.html">Interest Calculator</a></li>
+            <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+            <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Car Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+            <li><a href="auto-loan-refinance-calculator.html">Auto Loan Refinance</a></li>
+            <li><a href="car-loan-20000-monthly-payment.html">Car Loan for $20,000</a></li>
+            <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+            <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
+            <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
+            <li><a href="auto-loan-calculator-60-months.html">60 Month Auto Loan</a></li>
+            <li><a href="how-much-car-loan-can-i-afford.html">How Much Can I Afford</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Personal Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="bad-credit-loan-calculator.html">Bad Credit Loan</a></li>
+            <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+            <li><a href="personal-loan-20000-payment.html">Personal Loan for $20,000</a></li>
+            <li><a href="debt-consolidation-loan-calculator.html">Debt Consolidation</a></li>
+            <li><a href="home-improvement-loan-calculator.html">Home Improvement Loan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Mortgage Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+            <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+            <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+            <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Country Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="loan-calculator-usa.html">USA</a></li>
+            <li><a href="loan-calculator-uk.html">UK</a></li>
+            <li><a href="loan-calculator-canada.html">Canada</a></li>
+            <li><a href="loan-calculator-australia.html">Australia</a></li>
+            <li><a href="loan-calculator-uae.html">UAE</a></li>
+            <li><a href="loan-calculator-morocco.html">Morocco</a></li>
+            <li><a href="loan-calculator-india.html">India</a></li>
+            <li><a href="loan-calculator-singapore.html">Singapore</a></li>
+            <li><a href="loan-calculator-new-zealand.html">New Zealand</a></li>
+            <li><a href="loan-calculator-ireland.html">Ireland</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    (function() {
+      const principalInput = document.getElementById('simplePrincipal');
+      const rateInput = document.getElementById('simpleRate');
+      const timeInput = document.getElementById('simpleTime');
+      const calcBtn = document.getElementById('simpleCalculateBtn');
+      const interestOut = document.getElementById('simpleInterestOut');
+      const totalOut = document.getElementById('simpleTotalOut');
+
+      if (!calcBtn) return;
+
+      const CURRENCIES = ['USD', 'EUR', 'GBP', 'MAD', 'CAD', 'AUD', 'CHF', 'JPY', 'AED'];
+      function formatCurrency(amount, currency) {
+        const c = CURRENCIES.includes(currency) ? currency : 'USD';
+        const opt = { style: 'currency', currency: c, minimumFractionDigits: 2, maximumFractionDigits: 2 };
+        if (c === 'JPY') { opt.minimumFractionDigits = 0; opt.maximumFractionDigits = 0; }
+        return new Intl.NumberFormat('en-US', opt).format(amount);
+      }
+
+      function run() {
+        const p = parseFloat(principalInput?.value);
+        const r = parseFloat(rateInput?.value) / 100;
+        const t = parseFloat(timeInput?.value);
+        const currency = document.getElementById('currency')?.value || 'USD';
+
+        if (isNaN(p) || p < 0 || isNaN(t) || t < 0) {
+          if (interestOut) interestOut.textContent = '—';
+          if (totalOut) totalOut.textContent = '—';
+          [interestOut, totalOut].forEach(el => { if (el) el.classList.remove('has-value'); });
+          return;
+        }
+
+        const rate = isNaN(r) || r < 0 ? 0 : r;
+        const interest = p * rate * t;
+        const total = p + interest;
+
+        if (interestOut) {
+          interestOut.textContent = formatCurrency(interest, currency);
+          interestOut.classList.add('has-value');
+        }
+        if (totalOut) {
+          totalOut.textContent = formatCurrency(total, currency);
+          totalOut.classList.add('has-value');
+        }
+      }
+
+      calcBtn.addEventListener('click', run);
+      [principalInput, rateInput, timeInput].forEach(el => {
+        if (el) el.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); run(); } });
+      });
+    })();
+  </script>
+</body>
+</html>

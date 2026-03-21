@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator – P&amp;I Payment, Interest &amp; Total (Free)</title>
+  <meta name="description" content="Calculate your mortgage monthly payment in seconds. Principal &amp; interest, total cost &amp; amortization. Free—compare $200k to $500k. No signup.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://loanwisecalc.com/mortgage-calculator.html">
+  <meta property="og:title" content="Mortgage Calculator – P&amp;I Payment, Interest &amp; Total (Free)">
+  <meta property="og:description" content="Calculate your mortgage monthly payment in seconds. Principal &amp; interest, total cost &amp; amortization. Free—compare $200k to $500k. No signup.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this include escrow for taxes and insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You only see principal and interest. Your real housing payment is often higher when escrow and other items are billed monthly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I enter a 15- or 30-year mortgage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use months: 180 for 15 years, 360 for 30. Any term your lender offers works as long as you convert years \u00d7 12."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the interest rate the same as APR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always. APR bundles in some costs and is meant to help compare offers. For this calculator, use the loan\u2019s stated interest rate used in the amortization schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I model an ARM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page assumes the rate stays fixed for the entire term. For an ARM, use the initial fixed years only, or rerun the math when the rate resets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I put less down if the payment is high?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A smaller down payment can raise the loan amount and may trigger mortgage insurance. Weigh monthly cash flow against total interest and insurance cost over time."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-tool-calculator">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">
+          <span class="logo-icon" aria-hidden="true">L</span>
+          <span class="logo-text">LoanWise</span>
+        </a>
+        <div class="site-nav-scroll">
+        <a href="index.html">Home</a>
+        <a href="car-loan-calculator.html">Car Loan</a>
+        <a href="auto-loan-calculator.html">Auto Loan</a>
+        <a href="personal-loan-calculator.html">Personal Loan</a>
+        <a href="business-loan-calculator.html">Business Loan</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a href="simple-interest-calculator.html">Simple Interest</a>
+        <a href="loan-calculator-usa.html">USA</a>
+        <a href="loan-calculator-uk.html">UK</a>
+        <a href="loan-calculator-canada.html">Canada</a>
+        <a href="loan-calculator-uae.html">UAE</a>
+        <a href="loan-calculator-morocco.html">Morocco</a>
+        <a href="loan-calculator-australia.html">Australia</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="terms.html">Terms</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Mortgage Calculator</span>
+    </nav>
+    <header class="page-header page-header--compact">
+      <h1>Mortgage Calculator — P&amp;I Payment, Free &amp; Fast</h1>
+      <p class="subtitle subtitle--benefit">360 months = 30 years · P&amp;I only—add taxes/insurance in your budget</p>
+      <p class="intro-lead">See your mortgage payment instantly. Free online tool—simple and fast, no signup. Start calculating your loan now.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="ad-slot ad-top" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+    <main class="calculator">
+      <div class="input-group">
+        <label for="currency">Currency</label>
+        <select id="currency" aria-label="Select currency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="MAD">MAD - Moroccan Dirham</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="AED">AED - UAE Dirham</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="loanAmount">Loan Amount (Principal)</label>
+        <input type="number" id="loanAmount" placeholder="e.g. 300000" min="1" step="1000">
+      </div>
+
+      <div class="input-group">
+        <label for="interestRate">Interest Rate (%)</label>
+        <input type="number" id="interestRate" placeholder="e.g. 6.5" min="0" max="100" step="0.01">
+      </div>
+
+      <div class="input-group">
+        <label for="loanTerm">Loan Term (months)</label>
+        <input type="number" id="loanTerm" placeholder="e.g. 360" min="1" max="600" step="1">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate your loan now</button>
+
+      <div class="results" id="results">
+        <div class="result-card">
+          <p class="result-label">Monthly Payment</p>
+          <p class="result-value" id="monthlyPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Payment</p>
+          <p class="result-value" id="totalPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Interest</p>
+          <p class="result-value" id="totalInterest">—</p>
+        </div>
+      </div>
+    </main>
+
+    <p class="help-text help-text--below">30-year shortcut: <a href="mortgage-30-year-calculator.html">dedicated 30-year calculator</a>. More: <a href="index.html">home</a>, <a href="car-loan-calculator.html">car</a>, <a href="personal-loan-calculator.html">personal</a>, <a href="interest-calculator.html">interest</a>.</p>
+
+    <p class="disclaimer">P&amp;I only—no taxes, insurance, or PMI. <a href="index.html">Home</a> · <a href="car-loan-calculator.html">Car</a></p>
+
+    <nav class="silo-links" aria-label="Mortgage calculators in this section">
+      <p class="silo-links-intro">In this section:</p>
+      <p class="silo-links-row">
+        <a href="mortgage-30-year-calculator.html">30-year</a> ·
+        <a href="mortgage-150k-payment.html">$150k</a> ·
+        <a href="mortgage-200k-payment.html">$200k</a> ·
+        <a href="mortgage-250k-payment.html">$250k</a> ·
+        <a href="mortgage-300k-payment.html">$300k</a> ·
+        <a href="mortgage-400k-payment.html">$400k</a>
+      </p>
+    </nav>
+
+    <section class="popular-calculations" aria-labelledby="popular-calculations-heading">
+      <h2 id="popular-calculations-heading">Popular Calculations</h2>
+      <p class="popular-calculations-lede">Jump to the calculator you need—mortgage, car, personal, or by amount:</p>
+      <ul class="sitemap-list">
+        <li><a href="index.html">Loan Calculator</a></li>
+        <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+        <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+        <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+        <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+        <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage Calculator</a></li>
+        <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage Calculator</a></li>
+        <li><a href="car-loan-25000-monthly-payment.html">Car Loan for $25,000</a></li>
+        <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+        <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+        <li><a href="how-much-car-loan-can-i-afford.html">How Much Car Loan Can I Afford</a></li>
+        <li><a href="loan-calculator-with-interest-breakdown.html">Loan with Interest Breakdown</a></li>
+        <li><a href="sitemap.html">Full Sitemap</a></li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>How to use this calculator</h2>
+      <ol>
+        <li><strong>Select your currency</strong> — USD, GBP, EUR, or another to match your mortgage.</li>
+        <li><strong>Enter the loan amount</strong> — The principal you’re borrowing (sale price minus down payment).</li>
+        <li><strong>Enter the interest rate</strong> — Use the annual rate your lender quoted (e.g. 6.5 for 6.5%).</li>
+        <li><strong>Enter the term in months</strong> — 360 for 30 years, 180 for 15 years, or any term your lender offers.</li>
+        <li><strong>Click Calculate</strong> — See your monthly principal and interest payment, total repayment, and total interest.</li>
+      </ol>
+
+      <h2>Real-world example</h2>
+      <p>A <strong>$300,000</strong> mortgage at <strong>6.5%</strong> for <strong>30 years (360 months)</strong> gives a monthly payment of about <strong>$1,896</strong>. Over 30 years you’d pay roughly <strong>$682,600</strong> in total—<strong>$382,600</strong> in interest. With a 15-year term at the same rate, the payment rises to about <strong>$2,613</strong>, but total interest drops to around <strong>$170,300</strong>. Use the calculator above to compare your own scenarios.</p>
+
+      <h2>Term comparison: $300,000 at 6.5% APR</h2>
+      <p>How loan term affects monthly payment and total interest:</p>
+      <table class="comparison-table" aria-label="Mortgage term comparison">
+        <tr><th>Term</th><th>Monthly Payment</th><th>Total Interest</th></tr>
+        <tr><td>15 years</td><td>$2,613</td><td>$170,300</td></tr>
+        <tr><td>20 years</td><td>$2,238</td><td>$237,200</td></tr>
+        <tr><td>30 years</td><td>$1,896</td><td>$382,600</td></tr>
+      </table>
+      <p>See <a href="mortgage-15-year-calculator.html">15-Year Mortgage</a> and <a href="mortgage-30-year-calculator.html">30-Year Mortgage</a> for dedicated calculators.</p>
+
+      <h2>What affects your mortgage payment</h2>
+      <ul>
+        <li><strong>Loan amount</strong> — A larger loan or smaller down payment increases the monthly payment and total interest.</li>
+        <li><strong>Interest rate</strong> — Your credit score, loan type, and market rates all affect the rate. A half-point can change the payment by hundreds per month on a large balance.</li>
+        <li><strong>Loan term</strong> — A 15-year loan has higher monthly payments but far less total interest than a 30-year loan.</li>
+        <li><strong>Points and fees</strong> — Paying discount points can lower the rate; closing costs may be paid upfront or rolled in—check your estimate.</li>
+      </ul>
+
+      <h2>How mortgage principal and interest work</h2>
+      <p>A standard fixed-rate mortgage pays down the loan in equal monthly installments. Each payment is split between interest on the remaining balance and principal. At the start, interest takes a larger share; near the end, almost everything goes to principal.</p>
+      <p>The core drivers are loan amount, annual interest rate, and term in months. For example, 360 months is a 30-year loan and 180 months is 15 years. LoanWise uses the same amortization approach as our <a href="index.html">main loan calculator</a>, so you can line this up beside a <a href="personal-loan-calculator.html">personal loan calculator</a> or <a href="car-loan-calculator.html">car loan calculator</a> scenario.</p>
+
+      <h2>What this estimate leaves out</h2>
+      <p>Many homeowners pay property tax, homeowners insurance, and sometimes mortgage insurance or HOA fees every month through escrow. Those are not included here. Closing costs, points, and lender credits also sit outside this simple payment model.</p>
+      <p>If your loan wraps certain fees into the balance, you can add them to the amount field for a closer match. Otherwise treat the output as principal-and-interest only and budget the rest separately.</p>
+
+      <h2>Using the numbers when you shop</h2>
+      <p>Try a few rate and term combinations to see how sensitive your payment is to small changes. Even a quarter-point on a large balance can matter over decades. Compare the lender’s quoted rate to what you enter here to sanity-check paperwork.</p>
+      <p>Small-business borrowers can model term debt with our <a href="business-loan-calculator.html">business loan calculator</a>. If you want simple-interest examples alongside amortization, open the <a href="simple-interest-calculator.html">simple interest calculator</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq-list">
+        <dt>Does this include escrow for taxes and insurance?</dt>
+        <dd>No. You only see principal and interest. Your real housing payment is often higher when escrow and other items are billed monthly.</dd>
+        <dt>How do I enter a 15- or 30-year mortgage?</dt>
+        <dd>Use months: 180 for 15 years, 360 for 30. Any term your lender offers works as long as you convert years × 12.</dd>
+        <dt>Is the interest rate the same as APR?</dt>
+        <dd>Not always. APR bundles in some costs and is meant to help compare offers. For this calculator, use the loan’s stated interest rate used in the amortization schedule.</dd>
+        <dt>Can I model an ARM?</dt>
+        <dd>This page assumes the rate stays fixed for the entire term. For an ARM, use the initial fixed years only, or rerun the math when the rate resets.</dd>
+        <dt>Should I put less down if the payment is high?</dt>
+        <dd>A smaller down payment can raise the loan amount and may trigger mortgage insurance. Weigh monthly cash flow against total interest and insurance cost over time.</dd>
+      </dl>
+    </section>
+
+                                <div class="ad-slot ad-middle" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+                <section class="related-calculators" aria-labelledby="related-calculators-heading">
+      <h2 id="related-calculators-heading">Related Calculators</h2>
+      <ul class="related-calculators-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+        <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+        <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+        <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+        <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+        <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+        <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+        <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
+        <li><a href="loan-calculator-uk.html">Loan Calculator UK</a></li>
+        <li><a href="loan-calculator-canada.html">Loan Calculator Canada</a></li>
+      </ul>
+    </section>
+
+    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+
+  </div>
+
+      <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-map" aria-label="Footer links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Loan Calculator</a></li>
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
+            <li><a href="interest-calculator.html">Interest Calculator</a></li>
+            <li><a href="loan-10000-monthly-payment.html">Loan for $10,000</a></li>
+            <li><a href="loan-20000-monthly-payment.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Car Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
+            <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
+            <li><a href="auto-loan-refinance-calculator.html">Auto Loan Refinance</a></li>
+            <li><a href="car-loan-20000-monthly-payment.html">Car Loan for $20,000</a></li>
+            <li><a href="car-loan-30000-monthly-payment.html">Car Loan for $30,000</a></li>
+            <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
+            <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
+            <li><a href="auto-loan-calculator-60-months.html">60 Month Auto Loan</a></li>
+            <li><a href="how-much-car-loan-can-i-afford.html">How Much Can I Afford</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Personal Loan Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
+            <li><a href="bad-credit-loan-calculator.html">Bad Credit Loan</a></li>
+            <li><a href="personal-loan-10000-payment.html">Personal Loan for $10,000</a></li>
+            <li><a href="personal-loan-20000-payment.html">Personal Loan for $20,000</a></li>
+            <li><a href="debt-consolidation-loan-calculator.html">Debt Consolidation</a></li>
+            <li><a href="home-improvement-loan-calculator.html">Home Improvement Loan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Mortgage Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="mortgage-200k-payment.html">Mortgage for $200k</a></li>
+            <li><a href="mortgage-300k-payment.html">Mortgage for $300k</a></li>
+            <li><a href="mortgage-30-year-calculator.html">30-Year Mortgage</a></li>
+            <li><a href="mortgage-15-year-calculator.html">15-Year Mortgage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Country Calculators</h3>
+          <ul class="footer-links">
+            <li><a href="loan-calculator-usa.html">USA</a></li>
+            <li><a href="loan-calculator-uk.html">UK</a></li>
+            <li><a href="loan-calculator-canada.html">Canada</a></li>
+            <li><a href="loan-calculator-australia.html">Australia</a></li>
+            <li><a href="loan-calculator-uae.html">UAE</a></li>
+            <li><a href="loan-calculator-morocco.html">Morocco</a></li>
+            <li><a href="loan-calculator-india.html">India</a></li>
+            <li><a href="loan-calculator-singapore.html">Singapore</a></li>
+            <li><a href="loan-calculator-new-zealand.html">New Zealand</a></li>
+            <li><a href="loan-calculator-ireland.html">Ireland</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 LoanWise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ meta_description }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoanWise">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-tool-calculator">
+{{ nav_html }}
+
+  <div class="container">
+{{ breadcrumb_html }}
+    <header class="page-header page-header--compact">
+      <h1>{{ h1 }}</h1>
+      <p class="subtitle subtitle--benefit">{{ subtitle }}</p>
+      <p class="intro-lead">{{ intro }}</p>
+      <p class="last-updated">Last updated: {{ last_updated }}</p>
+    </header>
+
+{{ calculator_html }}
+
+    <p class="help-text help-text--below">{{ help_links }}</p>
+    <p class="disclaimer">{{ disclaimer }}</p>
+
+    <section class="content-section">
+{{ content_section }}
+    </section>
+{{ related_calculators_html }}
+  </div>
+
+{{ footer_html }}
+</body>
+</html>

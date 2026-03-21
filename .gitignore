@@ -3,6 +3,10 @@
 .env
 .env.*
 node_modules/
+__pycache__/
+_bmad-output/
+_bmad/
+.cursor/
 *.html.txt
 *.css.txt
 *.js.txt
