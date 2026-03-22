@@ -16,30 +16,30 @@ import re
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
-AD_TOP = '''    <div class="ad-slot ad-top" aria-label="Advertisement">
+AD_TOP = '''    <div class="ad-container"><div class="ad-slot ad-top" aria-label="Advertisement">
       <div class="ad-placeholder">Advertisement</div>
-    </div>
+    </div></div>
 
 '''
 
 AD_INLINE = '''
-    <div class="ad-slot ad-inline" aria-label="Advertisement">
+    <div class="ad-container"><div class="ad-slot ad-inline" aria-label="Advertisement">
       <div class="ad-placeholder">Advertisement</div>
-    </div>
+    </div></div>
 
 '''
 
 AD_MIDDLE = '''
-    <div class="ad-slot ad-middle" aria-label="Advertisement">
+    <div class="ad-container"><div class="ad-slot ad-middle" aria-label="Advertisement">
       <div class="ad-placeholder">Advertisement</div>
-    </div>
+    </div></div>
 
 '''
 
 AD_BOTTOM = '''
-    <div class="ad-slot ad-bottom" aria-label="Advertisement">
+    <div class="ad-container"><div class="ad-slot ad-bottom" aria-label="Advertisement">
       <div class="ad-placeholder">Advertisement</div>
-    </div>
+    </div></div>
 
 '''
 

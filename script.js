@@ -1,17 +1,26 @@
 /**
  * LoanWise - Loan Calculator
  * Supports multiple currencies.
+ * Optimized to avoid forced layout and reduce main-thread blocking.
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  initCalculator();
-});
-
-// ============ Calculator ============
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'MAD', 'CAD', 'AUD', 'CHF', 'JPY', 'AED'];
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Defer init to avoid blocking LCP; use idle callback with fallback
+  const run = () => requestAnimationFrame(initCalculator);
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(run, { timeout: 80 });
+  } else {
+    requestAnimationFrame(run);
+  }
+});
+
 function initCalculator() {
+  // Early bailout for pages without calculator (about, contact, etc.)
   const currencySelect = document.getElementById('currency');
+  if (!currencySelect) return;
+
   const loanAmountInput = document.getElementById('loanAmount');
   const interestRateInput = document.getElementById('interestRate');
   const loanTermInput = document.getElementById('loanTerm');
@@ -19,8 +28,6 @@ function initCalculator() {
   const monthlyPaymentOutput = document.getElementById('monthlyPayment');
   const totalPaymentOutput = document.getElementById('totalPayment');
   const totalInterestOutput = document.getElementById('totalInterest');
-
-  if (!currencySelect) return;
 
   function calculateMonthlyPayment(principal, annualRate, months) {
     if (principal <= 0 || months <= 0) return null;
@@ -53,28 +60,28 @@ function initCalculator() {
     return { valid: true, value: parsed };
   }
 
+  // Batched DOM writes: all textContent first, then all classList, to avoid read-write interleaving
   function clearResults() {
     if (monthlyPaymentOutput) monthlyPaymentOutput.textContent = '—';
     if (totalPaymentOutput) totalPaymentOutput.textContent = '—';
     if (totalInterestOutput) totalInterestOutput.textContent = '—';
-    [monthlyPaymentOutput, totalPaymentOutput, totalInterestOutput].forEach(el => {
-      if (el) el.classList.remove('has-value');
-    });
+    if (monthlyPaymentOutput) monthlyPaymentOutput.classList.remove('has-value');
+    if (totalPaymentOutput) totalPaymentOutput.classList.remove('has-value');
+    if (totalInterestOutput) totalInterestOutput.classList.remove('has-value');
   }
 
+  // Batched DOM writes: all textContent first, then all classList, to avoid layout thrashing
   function setResults(monthly, total, interest, currency) {
-    if (monthlyPaymentOutput) {
-      monthlyPaymentOutput.textContent = formatCurrency(monthly, currency);
-      monthlyPaymentOutput.classList.add('has-value');
-    }
-    if (totalPaymentOutput) {
-      totalPaymentOutput.textContent = formatCurrency(total, currency);
-      totalPaymentOutput.classList.add('has-value');
-    }
-    if (totalInterestOutput) {
-      totalInterestOutput.textContent = formatCurrency(interest, currency);
-      totalInterestOutput.classList.add('has-value');
-    }
+    const monthlyStr = formatCurrency(monthly, currency);
+    const totalStr = formatCurrency(total, currency);
+    const interestStr = formatCurrency(interest, currency);
+
+    if (monthlyPaymentOutput) monthlyPaymentOutput.textContent = monthlyStr;
+    if (totalPaymentOutput) totalPaymentOutput.textContent = totalStr;
+    if (totalInterestOutput) totalInterestOutput.textContent = interestStr;
+    if (monthlyPaymentOutput) monthlyPaymentOutput.classList.add('has-value');
+    if (totalPaymentOutput) totalPaymentOutput.classList.add('has-value');
+    if (totalInterestOutput) totalInterestOutput.classList.add('has-value');
   }
 
   function handleCalculate() {
@@ -104,15 +111,18 @@ function initCalculator() {
     setResults(payment, totalPayment, totalInterest, currency);
   }
 
+  function onEnterKey(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleCalculate();
+    }
+  }
+
   if (calculateBtn) calculateBtn.addEventListener('click', handleCalculate);
 
   const formInputs = [currencySelect, loanAmountInput, interestRateInput, loanTermInput];
-  formInputs.forEach((el) => {
-    if (el) el.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        handleCalculate();
-      }
-    });
-  });
+  for (let i = 0; i < formInputs.length; i++) {
+    const el = formInputs[i];
+    if (el) el.addEventListener('keydown', onEnterKey);
+  }
 }

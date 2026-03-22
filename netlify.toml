@@ -3,13 +3,28 @@
   publish = "."
   command = ""
 
+# =============================================================================
+# PRODUCTION SECURITY HEADERS — applied to all routes
+# =============================================================================
 [[headers]]
-  for = "/*.html"
+  for = "/*"
   [headers.values]
+    # --- Frame protection ---
     X-Frame-Options = "DENY"
+    # --- MIME sniffing ---
     X-Content-Type-Options = "nosniff"
+    # --- Referrer ---
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # --- HSTS (HTTPS only, preload-ready) ---
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # --- Cross-Origin isolation ---
+    Cross-Origin-Opener-Policy = "same-origin"
+    # --- Permissions (restrict browser features) ---
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+    # --- Content Security Policy ---
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://fundingchoicesmessages.google.com; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'"
 
+# Cache static assets
 [[headers]]
   for = "/*.css"
   [headers.values]
