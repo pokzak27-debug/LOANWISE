@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Preconnect to third-party origins for faster script loading -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <!-- Google Tag Manager (GA4 via GTM) -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;if('fetchPriority'in j)j.fetchPriority='low';j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WPRBNP3T');</script>
   <!-- End Google Tag Manager -->
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- AdSense: deferred load to reduce main-thread blocking -->
+  <script>
+(function(){function l(){var s=document.createElement("script");s.async=true;s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7502486843743422";s.crossOrigin="anonymous";document.head.appendChild(s);}
+if("requestIdleCallback"in window)requestIdleCallback(l,{timeout:2500});else setTimeout(l,400);
+})();
+</script>
   <title>Loan Calculator (2026) – Monthly Payments Instantly | Free</title>
   <meta name="description" content="Calculate loan payments in seconds. Car, mortgage, personal—free, no signup. See monthly cost &amp; total interest. Get instant results. Try now.">
   <meta name="robots" content="index, follow">
@@ -24,8 +33,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 :root{--header-footer-bg:#fff;--header-footer-border:#e2e8f0;--color-bg:#f8fafc;--color-primary:#0f172a;--color-text:#334155;--color-text-muted:#475569;--color-accent:#1d4ed8;--color-accent-dark:#1e40af;--color-accent-gradient:#2563eb}
 body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--color-bg);color:var(--color-text);min-height:100vh;line-height:1.6;display:flex;flex-direction:column}
-.container{width:100%;max-width:640px;margin:0 auto;padding:1rem 1.5rem 1.5rem;flex:1}
-.calculator{background:#fff;border-radius:1rem;padding:1.5rem;border:1px solid #e2e8f0}
+.container{width:100%;max-width:640px;margin:0 auto;padding:1rem 1.5rem 1.5rem;flex:1;contain:layout}
+.calculator{background:#fff;border-radius:1rem;padding:1.5rem;border:1px solid #e2e8f0;contain:layout style;min-height:18rem}
 .input-group{margin-bottom:1.25rem}.input-group label{display:block;font-size:.875rem;font-weight:500;margin-bottom:.5rem}
 body.page-home-ctr .container{padding-top:.65rem}
 .site-header{position:sticky;top:0;z-index:100;background:var(--header-footer-bg);border-bottom:1px solid var(--header-footer-border)}
@@ -53,6 +62,16 @@ h1{font-size:1.625rem;font-weight:700;color:var(--color-primary);letter-spacing:
 @media(max-width:640px){.site-header-inner,.site-nav--inner{flex-wrap:wrap;flex-direction:column}.site-nav{flex-direction:column}.site-nav-scroll{flex:none;width:100%}}
 .skip-link{position:absolute;top:-3rem;left:1rem;z-index:9999;padding:.75rem 1rem;background:#0f172a;color:#fff;font-weight:600;text-decoration:none;border-radius:.5rem}.skip-link:focus{top:1rem;outline:2px solid var(--color-accent);outline-offset:2px}
 @media(max-width:520px){.container{padding:.75rem 1rem 1rem}.page-header,header.page-header{margin-bottom:.5rem}}
+/* CLS: reserve space for results, ads, calculator before full CSS */
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid #e2e8f0;min-height:8rem}
+.result-card{background:#f8fafc;border-radius:.5rem;padding:1rem;border:1px solid #e2e8f0;text-align:center}
+.result-card .result-label{font-size:.75rem;font-weight:600;color:#334155;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.375rem}
+.result-card .result-value{font-size:1rem;font-weight:700;color:#0f172a;min-height:1.5em;min-width:5em;font-variant-numeric:tabular-nums;line-height:1.4}
+/* CLS: ad slots - reserved space before load */
+.ad-container{width:100%;min-height:100px;margin:1.5rem 0;overflow:hidden;contain:layout;flex-shrink:0}
+.ad-slot,.ad-slot-inline,.ad-slot-top,.ad-slot-bottom{min-height:100px;display:flex;align-items:center;justify-content:center;background:#f8fafc;border:1px dashed #e2e8f0;border-radius:8px;overflow:hidden}
+.ad-slot-middle{min-height:250px}
+@media(max-width:520px){.results{grid-template-columns:1fr;min-height:12rem}.ad-slot,.ad-slot-inline,.ad-slot-top,.ad-slot-bottom{min-height:100px}.ad-slot-middle{min-height:250px}}
   </style>
   <link rel="preload" href="style.css" as="style" fetchpriority="high">
   <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
@@ -144,14 +163,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="calculator-trust">Free • No signup • Instant results</p>
       <button type="button" id="calculateBtn" class="cta-primary">Calculate Your Loan Now</button>
 
-      <dl class="results" id="results">
-        <dt>Monthly Payment</dt><dd id="monthlyPayment">—</dd>
-        <dt>Total Payment</dt><dd id="totalPayment">—</dd>
-        <dt>Total Interest</dt><dd id="totalInterest">—</dd>
-      </dl>
+      <div class="results" id="results">
+        <div class="result-card">
+          <p class="result-label">Monthly Payment</p>
+          <p class="result-value" id="monthlyPayment">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Interest</p>
+          <p class="result-value" id="totalInterest">—</p>
+        </div>
+        <div class="result-card">
+          <p class="result-label">Total Payment</p>
+          <p class="result-value" id="totalPayment">—</p>
+        </div>
+      </div>
     </main>
 
-    <div class="ad-container"><div class="ad-slot ad-inline" aria-label="Advertisement">Advertisement</div></div>
+    <div class="ad-container"><div class="ad-slot ad-slot-inline" aria-label="Advertisement">Advertisement</div></div>
 
     <!-- TOP CALCULATORS -->
     <section class="top-categories" aria-labelledby="top-categories-heading">
@@ -234,7 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </nav>
     </section>
 
-    <div class="ad-container"><div class="ad-slot ad-top" aria-label="Advertisement">Advertisement</div></div>
+    <div class="ad-container"><div class="ad-slot ad-slot-top" aria-label="Advertisement">Advertisement</div></div>
 
     <section class="disclaimer-section" aria-labelledby="disclaimer-heading">
       <h2 id="disclaimer-heading" class="visually-hidden">Disclaimer</h2>
@@ -308,8 +336,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </section>
 
-    <div class="ad-container"><div class="ad-slot ad-middle" aria-label="Advertisement">Advertisement</div></div>
-    <div class="ad-container"><div class="ad-slot ad-bottom" aria-label="Advertisement">Advertisement</div></div>
+    <div class="ad-container"><div class="ad-slot ad-slot-middle" aria-label="Advertisement">Advertisement</div></div>
+    <div class="ad-container"><div class="ad-slot ad-slot-bottom" aria-label="Advertisement">Advertisement</div></div>
 
   </div>
 
