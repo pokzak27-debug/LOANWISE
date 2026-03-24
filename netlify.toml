@@ -34,3 +34,672 @@
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+# =============================================================================
+# REDIRECTS — lean structure migration
+# =============================================================================
+
+[[redirects]]
+  from = "/auto-loan-calculator-24-months.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/auto-loan-calculator-36-months.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/auto-loan-calculator-48-months.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/auto-loan-calculator-60-months.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/auto-loan-calculator-72-months.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/auto-loan-refinance-calculator.html"
+  to = "/auto-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bad-credit-loan-calculator.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business-loan-10000-payment.html"
+  to = "/business-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business-loan-20000-payment.html"
+  to = "/business-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business-loan-50000-payment.html"
+  to = "/business-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-10000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-12000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-14000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-15000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-17500-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-18000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-20000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-22000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-23000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-25000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-27500-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-28000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-30000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-33000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-35000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-40000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-45000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-50000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-55000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-60000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-65000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-70000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-80000-monthly-payment.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/car-loan-monthly-payment-calculator.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/debt-consolidation-loan-calculator.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home-improvement-loan-calculator.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-much-car-loan-can-i-afford.html"
+  to = "/car-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-10000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-11000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-12000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-14000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-15000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-16000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-17500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-18000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-2000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-20000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-22500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-25000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-27500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-3000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-30000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-32500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-35000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-37500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-4000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-40000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-42500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-45000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-47500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-5000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-50000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-55000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-6000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-7000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-7500-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-8000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-9000-monthly-payment.html"
+  to = "/loan-calculator-usa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-calculator-india.html"
+  to = "/loan-calculator-comparison.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-calculator-ireland.html"
+  to = "/loan-calculator-comparison.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-calculator-morocco.html"
+  to = "/loan-calculator-comparison.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-calculator-new-zealand.html"
+  to = "/loan-calculator-comparison.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/loan-calculator-singapore.html"
+  to = "/loan-calculator-comparison.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-10-year-calculator.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-100k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-125k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-15-year-calculator.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-150k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-175k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-20-year-calculator.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-200k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-225k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-250k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-275k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-30-year-calculator.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-300k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-325k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-350k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-375k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-400k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-450k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mortgage-500k-payment.html"
+  to = "/mortgage-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-10000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-11000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-12000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-13000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-14000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-15000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-17500-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-18000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-2000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-20000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-25000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-3000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-4000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-5000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-6000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-7000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-7500-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-8000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/personal-loan-9000-payment.html"
+  to = "/personal-loan-calculator.html"
+  status = 301
+  force = true
