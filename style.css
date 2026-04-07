@@ -1923,6 +1923,13 @@ body.page-home-ctr .container {
   line-height: 1.62;
 }
 
+.content-section .loan-formula-display {
+  text-align: center;
+  font-weight: 600;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
 .content-section p:last-of-type {
   margin-bottom: 0;
 }

@@ -20,17 +20,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;if('fetchPriority
 if("requestIdleCallback"in window)requestIdleCallback(l,{timeout:2500});else setTimeout(l,400);
 })();
 </script>
-  <title>Contact LoanWise – Questions About Our Free Calculators</title>
-  <meta name="description" content="Have a question about our free car, mortgage, or personal loan calculators? Contact LoanWise—we read every message.">
+  <title>Contact LoanWise—Questions, Bugs &amp; Partnerships Now</title>
+  <meta name="description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure Formspree contact form—no signup needed to use our free loan tools online.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://loanwisecalc.com/contact.html">
-  <meta property="og:title" content="Contact LoanWise – Free Calculators">
-  <meta property="og:description" content="Get in touch. Questions about our free loan calculators? Contact us.">
+  <link rel="canonical" href="https://loanwisecalc.com/contact">
+  <meta property="og:title" content="Contact LoanWise—Questions, Bugs &amp; Partnerships Now">
+  <meta property="og:description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure Formspree contact form—no signup needed to use our free loan tools online.">
+  <meta property="og:url" content="https://loanwisecalc.com/contact">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LoanWise">
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact LoanWise",
+  "description": "Contact form for LoanWise calculator website.",
+  "url": "https://loanwisecalc.com/contact"
+}
+  </script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,7 +51,7 @@ if("requestIdleCallback"in window)requestIdleCallback(l,{timeout:2500});else set
       "name": "How quickly will I get a reply?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We try to respond within a few days, but volume varies. For quick answers, check our loan calculator or how to calculate guide ."
+        "text": "We usually respond within 24-48 hours on business days. Volume may vary around holidays. For quick answers about payments, try our loan calculator or how-to guide first."
       }
     },
     {
@@ -57,7 +67,7 @@ if("requestIdleCallback"in window)requestIdleCallback(l,{timeout:2500});else set
       "name": "Is there a phone number or live chat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We use email only. This helps us keep tools free and respond when we can."
+        "text": "We use this contact form and email. That helps us keep calculators free and track issues clearly. Select Bug report in the subject line if something is broken."
       }
     }
   ]
@@ -90,11 +100,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="loan-calculator-uk.html">UK</a>
         <a href="loan-calculator-canada.html">Canada</a>
         <a href="loan-calculator-uae.html">UAE</a>
-        <a href="loan-calculator-comparison.html">Morocco</a>
+        <a href="loan-calculator-comparison.html">Compare</a>
         <a href="loan-calculator-australia.html">Australia</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy-policy">Privacy Policy</a>
         <a href="sitemap.html">Sitemap</a>
         <a href="terms.html">Terms</a>
         </div>
@@ -109,8 +119,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span aria-current="page">Contact</span>
     </nav>
     <main class="page-content">
-      <h1 class="page-title">Contact LoanWise — We’re Here to Help</h1>
-      <p class="last-updated">Last updated: March 2026</p>
+      <h1 class="page-title">Contact LoanWise</h1>
+      <p class="last-updated">Last updated: April 2026</p>
 
     <div class="ad-container"><div class="ad-slot ad-slot-top" aria-label="Advertisement">
 
@@ -121,40 +131,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div></div>
 
       <section class="content-section">
-        <p class="intro-lead">Have a question about our free online calculators? Send a message—we read everything. No signup is ever required to use LoanWise. Start below when you’re ready.</p>
+        <p class="intro-lead">Send us a message about our free loan and interest calculators, report a problem, or propose a partnership. Submissions are delivered securely through <a href="https://formspree.io" rel="noopener noreferrer">Formspree</a>.</p>
 
-        <p>Replies aren’t instant, but we try to help everyone who writes in.</p>
+        <p>Using the calculators never requires an account—this form is only if you need to reach our team.</p>
+
+        <h2>Send a message</h2>
+        <!-- Set action to https://formspree.io/f/YOUR_REAL_ID after creating a form at https://formspree.io -->
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <!-- Honeypot: leave empty; Formspree rejects spam if filled -->
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="input-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="input-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" required autocomplete="email" placeholder="your@email.com">
+          </div>
+          <div class="input-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="General question">General question</option>
+              <option value="Bug report">Bug report</option>
+              <option value="Partnership">Partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="6" required placeholder="How can we help? Include calculator page, device, and browser if reporting a bug."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <p class="form-note">We usually respond within 24-48 hours.</p>
 
         <h2>Need numbers first?</h2>
-        <p><a href="index.html">Loan calculator</a> · <a href="car-loan-calculator.html">Car</a> · <a href="mortgage-calculator.html">Mortgage</a> · <a href="personal-loan-calculator.html">Personal</a>. How we work: <a href="about.html">About</a>.</p>
+        <p><a href="index.html">Loan calculator</a> · <a href="car-loan-calculator.html">Car</a> · <a href="mortgage-calculator.html">Mortgage</a> · <a href="personal-loan-calculator.html">Personal</a>. Learn more: <a href="/about">About</a>.</p>
 
         <h2>Frequently asked questions</h2>
         <dl class="faq-list">
           <dt>How quickly will I get a reply?</dt>
-          <dd>We try to respond within a few days, but volume varies. For quick answers, check our <a href="index.html">loan calculator</a> or <a href="how-to-calculate-loan-monthly-payment.html">how to calculate guide</a>.</dd>
+          <dd>We usually respond within <strong>24-48 hours</strong> on business days. If you need an immediate estimate, use the calculators above—they run in your browser without waiting on us.</dd>
           <dt>Can you give me financial advice or loan recommendations?</dt>
           <dd>No. LoanWise provides educational tools only. Always verify with your lender or a qualified advisor before making financial decisions.</dd>
           <dt>Is there a phone number or live chat?</dt>
-          <dd>We use email only. This helps us keep tools free and respond when we can.</dd>
+          <dd>We use this form so requests stay organized. Choose <strong>Bug report</strong> if something does not work, and include your device and browser so we can reproduce it.</dd>
         </dl>
-
-        <form class="contact-form" id="contactForm">
-          <div class="input-group">
-            <label for="contactName">Name</label>
-            <input type="text" id="contactName" name="name" required placeholder="Your name">
-          </div>
-          <div class="input-group">
-            <label for="contactEmail">Email</label>
-            <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
-          </div>
-          <div class="input-group">
-            <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="message" rows="5" required placeholder="Your message"></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send message now</button>
-        </form>
-
-        <p class="form-note">Responses are not guaranteed immediately. We receive many messages and will reply as we are able.</p>
       </section>
                                                <section class="related-calculators" aria-labelledby="related-calculators-heading">
       <h2 id="related-calculators-heading">Related Calculators</h2>
@@ -185,8 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
             <li><a href="business-loan-calculator.html">Business Loan Calculator</a></li>
             <li><a href="interest-calculator.html">Interest Calculator</a></li>
-            <li><a href="loan-calculator-usa.html">Loan for $10,000</a></li>
-            <li><a href="loan-calculator-usa.html">Loan for $20,000</a></li>
+            <li><a href="loan-calculator-usa.html">Loan Calculator USA</a></li>
             <li><a href="loan-calculator-with-down-payment.html">Loan with Down Payment</a></li>
             <li><a href="sitemap.html">Sitemap</a></li>
           </ul>
@@ -196,34 +225,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <ul class="footer-links">
             <li><a href="car-loan-calculator.html">Car Loan Calculator</a></li>
             <li><a href="auto-loan-calculator.html">Auto Loan Calculator</a></li>
-            <li><a href="auto-loan-calculator.html">Auto Loan Refinance</a></li>
-            <li><a href="car-loan-calculator.html">Car Loan for $20,000</a></li>
-            <li><a href="car-loan-calculator.html">Car Loan for $30,000</a></li>
             <li><a href="used-car-loan-calculator.html">Used Car Loan</a></li>
             <li><a href="car-loan-with-trade-in-calculator.html">Car Loan with Trade-In</a></li>
-            <li><a href="auto-loan-calculator.html">60 Month Auto Loan</a></li>
-            <li><a href="car-loan-calculator.html">How Much Can I Afford</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3 class="footer-col-title">Personal Loan Calculators</h3>
           <ul class="footer-links">
             <li><a href="personal-loan-calculator.html">Personal Loan Calculator</a></li>
-            <li><a href="personal-loan-calculator.html">Bad Credit Loan</a></li>
-            <li><a href="personal-loan-calculator.html">Personal Loan for $10,000</a></li>
-            <li><a href="personal-loan-calculator.html">Personal Loan for $20,000</a></li>
-            <li><a href="personal-loan-calculator.html">Debt Consolidation</a></li>
-            <li><a href="personal-loan-calculator.html">Home Improvement Loan</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3 class="footer-col-title">Mortgage Calculators</h3>
           <ul class="footer-links">
             <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li><a href="mortgage-calculator.html">Mortgage for $200k</a></li>
-            <li><a href="mortgage-calculator.html">Mortgage for $300k</a></li>
-            <li><a href="mortgage-calculator.html">30-Year Mortgage</a></li>
-            <li><a href="mortgage-calculator.html">15-Year Mortgage</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -234,25 +249,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="loan-calculator-canada.html">Canada</a></li>
             <li><a href="loan-calculator-australia.html">Australia</a></li>
             <li><a href="loan-calculator-uae.html">UAE</a></li>
-            <li><a href="loan-calculator-comparison.html">Morocco</a></li>
-            <li><a href="loan-calculator-comparison.html">India</a></li>
-            <li><a href="loan-calculator-comparison.html">Singapore</a></li>
-            <li><a href="loan-calculator-comparison.html">New Zealand</a></li>
-            <li><a href="loan-calculator-comparison.html">Ireland</a></li>
+            <li><a href="loan-calculator-comparison.html">Compare countries</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3 class="footer-col-title">Company</h3>
           <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="sitemap.html">Sitemap</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3 class="footer-col-title">Legal</h3>
           <ul class="footer-links">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
             <li><a href="terms.html">Terms</a></li>
           </ul>
         </div>
@@ -263,11 +274,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message. We receive many inquiries and cannot guarantee an immediate response.');
-    });
-  </script>
 </body>
 </html>

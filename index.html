@@ -20,12 +20,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;if('fetchPriority
 if("requestIdleCallback"in window)requestIdleCallback(l,{timeout:2500});else setTimeout(l,400);
 })();
 </script>
-  <title>Loan Calculator (2026) – Monthly Payments Instantly | Free</title>
-  <meta name="description" content="Calculate loan payments in seconds. Car, mortgage, personal—free, no signup. See monthly cost &amp; total interest. Get instant results. Try now.">
+  <title>Free Loan Calculator—Monthly Payment &amp; Interest | LoanWise</title>
+  <meta name="description" content="Estimate monthly loan payments, total interest and payoff fast. Free amortization calculator—no signup. Multi-currency. Compare terms before you borrow.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://loanwisecalc.com/">
-  <meta property="og:title" content="Loan Calculator (2026) – Monthly Payments Instantly">
-  <meta property="og:description" content="Calculate loan payments in seconds. Car, mortgage, personal—free, no signup. See monthly cost &amp; total interest. Try now.">
+  <meta property="og:title" content="Free Loan Calculator—Monthly Payment &amp; Interest | LoanWise">
+  <meta property="og:description" content="Estimate monthly loan payments, total interest and payoff fast. Free amortization calculator—no signup. Multi-currency. Compare terms before you borrow.">
+  <meta property="og:url" content="https://loanwisecalc.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LoanWise">
   <style>
@@ -102,8 +103,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <!-- HERO -->
     <header class="page-header hero">
-      <h1>Loan Calculator — Calculate Your Monthly Payment in Seconds</h1>
-      <p class="intro-lead">Use this free loan calculator to estimate your monthly payment, total interest, and full loan cost. No signup required.</p>
+      <h1>Free Loan Payment Calculator — Monthly Installment &amp; Total Interest</h1>
+      <p class="intro-lead">This tool estimates your fixed monthly payment on a standard amortizing loan: you enter principal, annual interest rate, and term in months, and it returns payment, total paid, and interest cost. It is designed for borrowers and shoppers who want a quick, private sanity check before comparing formal offers from banks, credit unions, or dealers. Results are educational only—your lender’s disclosures, fees, and rounding may differ slightly from what you see here.</p>
       <p class="hero-trust">Free • No signup • Instant results</p>
       <a href="#main-content" class="hero-cta">Calculate Your Loan Now</a>
     </header>
@@ -179,6 +180,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </main>
 
+    <section class="content-section" aria-labelledby="how-to-use-loan-calc">
+      <h2 id="how-to-use-loan-calc">How to use this calculator</h2>
+      <p>Follow these steps to get a reliable estimate. Each step builds on the previous one so you can compare scenarios without leaving the page.</p>
+      <ol>
+        <li><strong>Select a currency</strong> from the menu. This only changes how amounts are formatted (symbols and grouping); it does not change the math. Pick the currency that matches your quote or bank statement so the output is easier to read at a glance.</li>
+        <li><strong>Enter the loan amount</strong> you plan to borrow—the principal after any down payment if you are modeling net financing. If your lender rolls origination fees into the loan, include that financed amount here so the payment reflects what you will actually repay.</li>
+        <li><strong>Enter the annual interest rate</strong> as a percentage (for example, 6.99 for 6.99% APR on a simple fixed-rate model). The calculator converts that to a monthly rate internally. If you have a promotional 0% offer, you can enter 0 and the tool will spread the principal evenly across the months.</li>
+        <li><strong>Enter the term in months</strong> (for example, 36, 48, 60, or 72 for auto loans; 360 for a 30-year mortgage expressed in months). Longer terms usually lower the monthly payment but increase total interest, which you can confirm by changing only the term and recalculating.</li>
+        <li><strong>Click “Calculate Your Loan Now”</strong> to see monthly payment, total interest, and total payment. Adjust any input and run again to compare offers side by side before you apply or sign.</li>
+      </ol>
+
+      <h2>How it works</h2>
+      <p>LoanWise uses the same standard <strong>fixed-rate amortization</strong> model that most installment loans use when they quote a level monthly payment. Each month, interest accrues on the remaining balance; the portion of your payment above that interest retires principal. Early in the loan, more of each payment covers interest; near the end, almost all of it reduces principal. The calculator assumes the rate stays constant for the whole term and that payments are made on time—assumptions that match many car, personal, and simple mortgage products, though not every real-world loan.</p>
+      <p>Mathematically, let <em>P</em> be the principal, <em>n</em> the number of months, and <em>r</em> the monthly interest rate (annual rate ÷ 100 ÷ 12). When <em>r</em> &gt; 0, the monthly payment is</p>
+      <p class="loan-formula-display"><em>M = P × r × (1 + r)<sup>n</sup> / ((1 + r)<sup>n</sup> − 1)</em></p>
+      <p>Total payment is <em>M × n</em>, and total interest is total payment minus <em>P</em>. When the annual rate is 0%, the tool uses <em>M = P / n</em> so you still get a sensible flat payment. This mirrors the logic in our on-page script: it converts your annual percentage to a monthly rate, applies the formula above, then sums interest across the schedule implied by a constant payment.</p>
+
+      <h2>Why use this tool</h2>
+      <ul>
+        <li><strong>Clarity before you commit.</strong> Seeing payment, total paid, and interest in one place helps you judge whether a loan fits your budget and whether a longer term is worth the extra lifetime cost. You can iterate in seconds instead of rebuilding spreadsheets for every quote.</li>
+        <li><strong>Fair comparisons between offers.</strong> When two lenders quote different rates or terms, plugging each scenario into the same formula isolates what actually changed. That reduces the chance you will focus only on a lower monthly payment while missing thousands in additional interest.</li>
+        <li><strong>Privacy-friendly planning.</strong> You do not create an account or upload documents; numbers stay in your browser session for estimation. Pair this with our specialized <a href="car-loan-calculator.html">car</a>, <a href="mortgage-calculator.html">mortgage</a>, and <a href="personal-loan-calculator.html">personal</a> calculators when you want a product-specific context.</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <dl class="faq-list">
+        <dt>Is this monthly payment exactly what my bank will charge?</dt>
+        <dd>Not necessarily. Banks and dealers may round payments to the nearest cent differently, apply odd-day interest, or include taxes, insurance, or fees outside the principal-and-interest model. This calculator shows the standard amortizing payment for the numbers you entered. It is excellent for comparison shopping and budgeting, but you should always rely on your official loan estimate or contract for the binding amount. If your lender bundles fees into the financed balance, increase the principal field so the estimate moves closer to reality.</dd>
+        <dt>Why does a longer loan term lower my payment but cost more overall?</dt>
+        <dd>A longer term spreads the same principal across more payments, so each installment is smaller and easier on cash flow. However, you pay interest for more months, and early payments are still front-loaded with interest on the remaining balance. That combination almost always raises total interest paid even though each check is lower. Run the calculator twice with the same amount and rate but different terms to see the trade-off numerically before you choose convenience over total cost.</dd>
+        <dt>Can I model a mortgage or a car loan with this tool?</dt>
+        <dd>Yes, as long as you are comfortable with a simplified principal-and-interest picture. Enter the amount you finance, the annual rate, and the term in months (for a 30-year mortgage, use 360). The same formula applies across many consumer loan types. Real mortgages often add escrow for taxes and insurance, and auto loans may include add-on products; this page does not model those separately. For more targeted copy and context, open our <a href="mortgage-calculator.html">mortgage calculator</a> or <a href="car-loan-calculator.html">car loan calculator</a> after you have explored the numbers here.</dd>
+        <dt>What if I make extra payments or pay off early?</dt>
+        <dd>This interface assumes you pay exactly the scheduled amount every month until the term ends. Extra principal payments reduce the balance faster, shorten the payoff date, and cut total interest, but the outcome depends on your lender’s rules and whether they recalculate or simply shorten the term. Use the results here as a baseline payment; then ask your lender how prepayments are applied. We also offer a <a href="loan-calculator-with-extra-payments.html">calculator with extra payments</a> when you want to explore that path in more detail.</dd>
+        <dt>Does LoanWise store the loan amounts I type in?</dt>
+        <dd>LoanWise does not require a login for this calculator, and the tool is built for quick, local estimation rather than underwriting. Your inputs are used in the browser to produce the displayed results; we do not run a credit application or save your numbers as a loan file on your behalf. Normal website analytics may still record which pages were viewed and technical information as described in our <a href="/privacy-policy">privacy policy</a>. For personalized advice about taxes, legal matters, or suitability of a specific product, consult a qualified professional.</dd>
+      </dl>
+    </section>
+
     <div class="ad-container"><div class="ad-slot ad-slot-inline" aria-label="Advertisement">Advertisement</div></div>
 
     <!-- TOP CALCULATORS -->
@@ -228,27 +268,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <section class="trust-section" aria-labelledby="trust-heading">
-      <h2 id="trust-heading" class="visually-hidden">Why use LoanWise</h2>
-      <ul class="trust-points trust-points--three">
-        <li class="trust-point">
-          <span class="trust-point-icon" aria-hidden="true">✓</span>
-          <strong class="trust-point-title">Fast</strong>
-          <p class="trust-point-text">See monthly payment, total paid, and interest in one click.</p>
-        </li>
-        <li class="trust-point">
-          <span class="trust-point-icon" aria-hidden="true">✓</span>
-          <strong class="trust-point-title">Free</strong>
-          <p class="trust-point-text">No paywalls or signup—enter your numbers and get results.</p>
-        </li>
-        <li class="trust-point">
-          <span class="trust-point-icon" aria-hidden="true">✓</span>
-          <strong class="trust-point-title">Accurate</strong>
-          <p class="trust-point-text">Standard amortization math—same formula banks use.</p>
-        </li>
-      </ul>
-    </section>
-
     <!-- INTERNAL LINKS -->
     <section class="internal-links-section" aria-labelledby="explore-heading">
       <h2 id="explore-heading" class="section-title">More Calculators</h2>
@@ -267,61 +286,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="disclaimer-section" aria-labelledby="disclaimer-heading">
       <h2 id="disclaimer-heading" class="visually-hidden">Disclaimer</h2>
       <p class="disclaimer-text">Estimates only. Your lender sets the real rate, fees, and payment. <a href="car-loan-calculator.html">Compare with our specialized calculators</a>—same transparent math.</p>
-    </section>
-
-    <section class="content-section" id="how-to-calculate">
-      <h2>How your monthly loan payment is calculated</h2>
-      <p>When you borrow money, you repay it in fixed monthly installments. Each payment splits into <strong>interest</strong> (the cost of borrowing) and <strong>principal</strong> (the amount you owe). Early on, most of your payment goes to interest; by the end, almost everything goes to principal. Three numbers control the result: loan amount, annual rate, and term in months. Raise the amount or rate and the payment goes up; stretch the term and the payment usually falls—but you often pay more interest in total. Use our <a href="car-loan-calculator.html">car loan calculator</a>, <a href="mortgage-calculator.html">mortgage calculator</a>, <a href="personal-loan-calculator.html">personal loan calculator</a>, or <a href="loan-calculator-usa.html">loan for $10,000</a> for specialized tools.</p>
-
-      <h2>Real-world example</h2>
-      <p>Suppose you borrow <strong>$15,000</strong> at <strong>7.5%</strong> for <strong>48 months</strong>. Your monthly payment would be about <strong>$363</strong>. Over four years you’d pay roughly <strong>$17,400</strong> in total—<strong>$2,400</strong> of that is interest. If you extended the same loan to 60 months, the payment drops to around <strong>$300</strong>, but total interest rises to about <strong>$3,000</strong>. Use the calculator above to plug in your own numbers and compare.</p>
-
-      <h2>What affects your loan payment</h2>
-      <ul>
-        <li><strong>Loan amount (principal)</strong> — Borrowing more increases both your monthly payment and total interest.</li>
-        <li><strong>Interest rate</strong> — A higher rate raises the payment and the total cost. Even a 1% difference can add hundreds or thousands over the life of the loan.</li>
-        <li><strong>Loan term</strong> — A longer term lowers the monthly payment but usually means more interest paid over time.</li>
-        <li><strong>Fees</strong> — Origination or processing fees can be rolled into the loan, effectively increasing the amount you repay.</li>
-      </ul>
-
-      <h2>Understanding your results</h2>
-      <dl class="result-definitions">
-        <dt>Monthly payment</dt>
-        <dd>The amount due each period until the loan is paid off. On a standard fixed-rate loan, this stays steady so you can budget.</dd>
-        <dt>Total payment</dt>
-        <dd>Everything you will send the lender over the full term: original principal plus all interest, in this model.</dd>
-        <dt>Total interest</dt>
-        <dd>The cost of borrowing—the gap between total payment and the amount you first borrowed.</dd>
-      </dl>
-
-      <h2>Why use a loan calculator</h2>
-      <p>A loan calculator helps you see the real cost of borrowing before you apply. Whether you are financing a car, consolidating debt, or planning a home purchase, knowing your monthly payment and total interest lets you shop with confidence.</p>
-
-      <h3>Plan before you borrow</h3>
-      <p>Enter different loan amounts, rates, and terms to see how each change affects your payment. For example, a $20,000 loan at 8% for 60 months costs about $405 per month and $4,300 in total interest. The same loan over 48 months rises to $488 per month but saves about $1,100 in interest. A loan calculator shows these trade-offs instantly so you can choose a term that fits your budget.</p>
-
-      <h3>Compare offers side by side</h3>
-      <p>When lenders quote different rates or terms, plug each offer into the calculator to compare total cost, not just the monthly payment. A lower payment on a longer loan can mean paying more interest overall. Our calculator supports nine currencies, so you can model loans in USD, GBP, EUR, CAD, and more.</p>
-
-      <h3>Budget with confidence</h3>
-      <p>Knowing your exact monthly payment helps you plan your finances. You can see whether a loan fits your income and whether you have room for extra principal payments. Use our <a href="car-loan-calculator.html">car loan calculator</a>, <a href="mortgage-calculator.html">mortgage calculator</a>, or <a href="personal-loan-calculator.html">personal loan calculator</a> for product-specific tools. For housing, try <a href="mortgage-calculator.html">mortgage for $200k</a>; for vehicles, <a href="car-loan-calculator.html">car loan for $25,000</a>. Browse our <a href="sitemap.html">full sitemap</a> for all tools.</p>
-
-      <h2>How to use this for real decisions</h2>
-      <p>Try a few combinations before you talk to a bank. If you are deciding between 48 and 60 months, run both. If you are weighing two rate quotes, plug each in and compare total interest, not only the monthly line. Pick the currency that matches your country or bank statement so the formatting feels familiar.</p>
-
-      <h2>Frequently asked questions</h2>
-      <dl class="faq-list">
-        <dt>What affects my monthly loan payment?</dt>
-        <dd>Principal, annual rate, and term in months. Change any one and the payment changes. Small rate moves matter more on large balances and long terms.</dd>
-        <dt>Does this include bank fees or insurance?</dt>
-        <dd>No. We model principal and interest only. If your lender bundles fees into the loan, add them to the amount you enter; otherwise budget fees separately.</dd>
-        <dt>Can I use 0% interest?</dt>
-        <dd>Yes. Enter 0 for the rate. The payment is approximately the loan amount divided by the number of months, before any real-world fees.</dd>
-        <dt>Is the result a guarantee from a lender?</dt>
-        <dd>No. It is a mathematical estimate. Your bank may round differently or apply promotions you have not entered here.</dd>
-        <dt>How is this different from a credit card minimum?</dt>
-        <dd>Cards revolve and minimums can stretch repayment for years. This tool assumes a fixed payoff date like a typical term loan.</dd>
-      </dl>
     </section>
 
     <section class="related-calculators" aria-labelledby="related-calculators-heading">
@@ -400,10 +364,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
       <ul class="footer-col">
         <li><h3 class="footer-col-title">Company &amp; Legal</h3></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
         <li><a href="terms.html">Terms</a></li>
       </ul>
     </nav>
@@ -411,7 +375,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What affects my monthly loan payment?","acceptedAnswer":{"@type":"Answer","text":"Principal, annual rate, and term in months. Change any one and the payment changes. Small rate moves matter more on large balances and long terms."}},{"@type":"Question","name":"Does this include bank fees or insurance?","acceptedAnswer":{"@type":"Answer","text":"No. We model principal and interest only. If your lender bundles fees into the loan, add them to the amount you enter; otherwise budget fees separately."}},{"@type":"Question","name":"Can I use 0% interest?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter 0 for the rate. The payment is approximately the loan amount divided by the number of months, before any real-world fees."}},{"@type":"Question","name":"Is the result a guarantee from a lender?","acceptedAnswer":{"@type":"Answer","text":"No. It is a mathematical estimate. Your bank may round differently or apply promotions you have not entered here."}},{"@type":"Question","name":"How is this different from a credit card minimum?","acceptedAnswer":{"@type":"Answer","text":"Cards revolve and minimums can stretch repayment for years. This tool assumes a fixed payoff date like a typical term loan."}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this monthly payment exactly what my bank will charge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Banks and dealers may round payments to the nearest cent differently, apply odd-day interest, or include taxes, insurance, or fees outside the principal-and-interest model. This calculator shows the standard amortizing payment for the numbers you entered. It is excellent for comparison shopping and budgeting, but you should always rely on your official loan estimate or contract for the binding amount. If your lender bundles fees into the financed balance, increase the principal field so the estimate moves closer to reality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a longer loan term lower my payment but cost more overall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A longer term spreads the same principal across more payments, so each installment is smaller and easier on cash flow. However, you pay interest for more months, and early payments are still front-loaded with interest on the remaining balance. That combination almost always raises total interest paid even though each check is lower. Run the calculator twice with the same amount and rate but different terms to see the trade-off numerically before you choose convenience over total cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I model a mortgage or a car loan with this tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, as long as you are comfortable with a simplified principal-and-interest picture. Enter the amount you finance, the annual rate, and the term in months (for a 30-year mortgage, use 360). The same formula applies across many consumer loan types. Real mortgages often add escrow for taxes and insurance, and auto loans may include add-on products; this page does not model those separately. For more targeted context, open our mortgage calculator or car loan calculator after you have explored the numbers here."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I make extra payments or pay off early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This interface assumes you pay exactly the scheduled amount every month until the term ends. Extra principal payments reduce the balance faster, shorten the payoff date, and cut total interest, but the outcome depends on your lender’s rules and whether they recalculate or simply shorten the term. Use the results here as a baseline payment; then ask your lender how prepayments are applied. We also offer a calculator with extra payments when you want to explore that path in more detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does LoanWise store the loan amounts I type in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LoanWise does not require a login for this calculator, and the tool is built for quick, local estimation rather than underwriting. Your inputs are used in the browser to produce the displayed results; we do not run a credit application or save your numbers as a loan file on your behalf. Normal website analytics may still record which pages were viewed and technical information as described in our privacy policy. For personalized advice about taxes, legal matters, or suitability of a specific product, consult a qualified professional."
+      }
+    }
+  ]
+}
   </script>
   <script src="script.js" defer></script>
 </body>
