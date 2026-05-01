@@ -17,11 +17,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;if('fetchPriority
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7502486843743422"
      crossorigin="anonymous"></script>
   <title>Contact LoanWise—Questions, Bugs &amp; Partnerships Now</title>
-  <meta name="description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure Formspree contact form—no signup needed to use our free loan tools online.">
+  <meta name="description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure contact form with no signup needed to use our free loan tools online.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://loanwisecalc.com/contact">
   <meta property="og:title" content="Contact LoanWise—Questions, Bugs &amp; Partnerships Now">
-  <meta property="og:description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure Formspree contact form—no signup needed to use our free loan tools online.">
+  <meta property="og:description" content="Reach LoanWise for calculator questions, bug reports, or partnerships. Secure contact form with no signup needed to use our free loan tools online.">
   <meta property="og:url" content="https://loanwisecalc.com/contact">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LoanWise">
@@ -118,29 +118,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 class="page-title">Contact LoanWise</h1>
       <p class="last-updated">Last updated: April 2026</p>
 
-    <div class="ad-container"><div class="ad-slot ad-slot-top" aria-label="Advertisement">
-
-
-      <div class="ad-placeholder">Advertisement</div>
-
-
-    </div></div>
-
       <section class="content-section">
-        <p class="intro-lead">Send us a message about our free loan and interest calculators, report a problem, or propose a partnership. Submissions are delivered securely through <a href="https://formspree.io" rel="noopener noreferrer">Formspree</a>.</p>
+        <p class="intro-lead">Send us a message about our free loan and interest calculators, report a problem, or propose a partnership. Submissions are delivered securely through our hosted contact workflow.</p>
 
         <p>Using the calculators never requires an account—this form is only if you need to reach our team.</p>
 
         <h2>Send a message</h2>
-        <!-- Set action to https://formspree.io/f/YOUR_REAL_ID after creating a form at https://formspree.io -->
         <form
           class="contact-form"
           id="contactForm"
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          name="contact"
+          action="/contact"
           method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
         >
-          <!-- Honeypot: leave empty; Formspree rejects spam if filled -->
-          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="visually-hidden">
+            <label>Do not fill this field: <input name="bot-field"></label>
+          </p>
 
           <div class="input-group">
             <label for="contactName">Name</label>
@@ -167,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <button type="submit" class="submit-btn">Submit</button>
         </form>
 
-        <p class="form-note">We usually respond within 24-48 hours.</p>
+        <p class="form-note">We usually respond within 24-48 hours. Messages are processed through Netlify Forms.</p>
 
         <h2>Need numbers first?</h2>
         <p><a href="index.html">Loan calculator</a> · <a href="car-loan-calculator.html">Car</a> · <a href="mortgage-calculator.html">Mortgage</a> · <a href="personal-loan-calculator.html">Personal</a>. Learn more: <a href="/about">About</a>.</p>

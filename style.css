@@ -413,6 +413,11 @@ body {
   border-top: none;
 }
 
+.page-content {
+  max-width: 72ch;
+  margin: 0 auto;
+}
+
 /* Contact form */
 .contact-form {
   margin: 1.5rem 0;
@@ -1917,10 +1922,10 @@ body.page-home-ctr .container {
 }
 
 .content-section p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--color-text);
-  margin-bottom: 0.85rem;
-  line-height: 1.62;
+  margin-bottom: 1rem;
+  line-height: 1.72;
 }
 
 .content-section .loan-formula-display {
@@ -1938,8 +1943,8 @@ body.page-home-ctr .container {
 .content-section ol {
   margin: 0 0 0.85rem;
   padding-left: 1.25rem;
-  font-size: 0.9375rem;
-  line-height: 1.62;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--color-text);
 }
 
